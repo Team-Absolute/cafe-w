@@ -74,11 +74,64 @@
     <section class="review"></section>
     <section class="video"></section>
     <section class="reserve"></section>
-    <section class="w-card"></section>
-    <section class="lab"></section>
-    <section class="store"></section>
+    <section class="w-card">
+      <h2 class="favorite--headline" id="favoriteHeadline">CAFE W card</h2>
+      <!-- 제목 따로 만들어서 지정함(여기 뭐하는 부분임?), 후에 숨김 처리 -->
+      <div class="favorite--brief">
+      <!-- 디자인이 용이하게 문구를 div로 묶고, 여기에 class명 줌. -->
+        <p>PICK YOUR <span>FAVORITE</span></p>
+        <!-- 글자 크기가 다른 부분 span 묶음 -->
+        <pre>다양한 메뉴를
+카페 W에서 즐겨보세요</pre>
+        <pre>카페 W만의 특별함을 경험할 수 있는 최상의 선택 음료
+카페 W 커피와 완벽한 어울림을 자랑하는 푸드
+사용한 시도와 디자인으로 가치를 더하는 상품
+소중한 사람에게 마음을 전하는 가장 좋은 방법. 카페 W 카드</pre>
+      </div>
+      <!-- 행갈이 있음 <br>? <pre>? <span>? 일단 pre 처리 -->
+      <ul class="favorite__img">
+        <li><img src="./img/section-favorite/Photo 01.svg" alt="w카드, 라떼 아트 제작 모습"></li>
+        <li><img src="./img/section-favorite/Photo 02.svg" alt="w카드, 하트가 그려진 라떼"></li>
+        <li><img src="./img/section-favorite/Photo 03.svg" alt="w카드, 커피 타임 이미지 컷"></li>
+      </ul>
+      <!-- 이미지 목록으로 묶음. 별다른 의미는 없는 듯? 후에 이미지가 추가 됐을 때, 목록에 추가 되는 개념.
+         이미지가 겹쳐져 보이는 시안인데, 호버된 이미지를 앞으로 보이게 해도 괜찮을 듯. z-index -->
+      <a class="favorite--more" href="#" aria-labelledby="favoriteHeadline">자세히 보기</a>
+      <!--아리아 레이블로 제목과 연결 -->
+    </section>
+    <section class="lab">
+      <h2 class="lab--headline">CAFE W <span>COFFEE LAB</span></h2>
+      <!-- 제목 그대로 쓰고, 굵기 다른 부분 span -->
+      <p class="lab--brief">최고의 커피를 향한 끊임없는 노력, <em>카페 W 커피연구소</em></p>
+      <!-- 문구 p, 중요 문구 em -->
+      <ul class="lab__list">
+        <li><a href="#">LAB MENU</a></li>
+        <li><a href="#">LAB BARISTA</a></li>
+      </ul>
+      <!-- 목록 처리. 
+        이미지는 백그라운드로,
+        이미지가 겹쳐져 보이는 시안인데, 호버된 이미지를 앞으로 보이게 해도 괜찮을 듯. z-index -->
+    </section>
+    <section class="store">
+      <!-- 맨 위에 배경, 로고가 있는 modal 이 있는데, 따로 영역을 주지 않고 가상요소로 처리하면 어떨지? -->
+      <h2 class="store--headline"><a href="#">매장 찾기</a></h2>
+      <!-- 시안 상 가장 아래 앵커인데, 제목으로 가장 적절한 것 같다 -->
+        <p class="store--brief">카페 W를 가까이에서 경험해보세요. <span>고객님과 가장 가까이 있는 매장을 찾아보세요!</span></p>
+      <ul class="store__list">
+        <li>차별화된 커피 경험을 누릴 수 있는 <span>리저브 매장</span></li>
+        <li>다양한 방법으로 편리하게 즐길 수 있는 <span>드라이브 스루 매장</span></li>
+        <li>함께해서 더 따뜻할수 있는 지역사회 소통 공간 <span>커뮤니티 매장</span></li>
+      </ul>
+      <!-- 매장 종류 목록으로 묶음. -->
+      <ul class="store__img">
+        <li><img src="./img/section-store/Image 04.svg" alt=""></li>
+        <li><img src="./img/section-store/Image 14.svg" alt=""></li>
+      </ul>
+      <img src="./img/section-store/Coffee Store.svg" alt="">
+      <!-- 아, 장식용 이미지 어떻게 해야 함??? -->
+    </section>
   </main>
-  
+
   <footer class="footer">
     <img src="./img/footer/Cafe W (Vertical).svg" alt="CAFE W">
     <ul class="about-us">
