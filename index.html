@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
   <meta name="author" content="ABSOLUTE">
   <meta name="description" content="ABSOLUTE clone coding project">
 </head>
+
 <body>
   <span><a href="#">본문 바로가기</a></span>
   <!-- body 맨 위에 본문 바로가기 -->
   <header class="header">
-    <h1 class="header--headline"><a href="#"><img src="./img/header/Cafe W (Horizontal, Dark).svg" alt="CAFE W"></a></h1>
+    <h1 class="header--headline"><a href="#"><img src="./img/header/Cafe W (Horizontal, Dark).svg" alt="CAFE W"></a>
+    </h1>
     <section class="member">
       <h2 class="a11y-hidden">로그인 및 회원 가입</h2>
       <ul class="member__menu">
@@ -34,29 +37,29 @@
       <h2 class="a11y-hidden">메뉴</h2>
       <ul class="menu__main">
         <li class="menu__main--item">Drinks</li>
-          <ul class="menu__main__sub">
-            <li><a href="#">콜드 브루</a></li>
-            <li><a href="#">에스프레소</a></li>
-            <li><a href="#">기타 제조 음료</a></li>
-          </ul>
+        <ul class="menu__main__sub">
+          <li><a href="#">콜드 브루</a></li>
+          <li><a href="#">에스프레소</a></li>
+          <li><a href="#">기타 제조 음료</a></li>
+        </ul>
         <li class="menu__main--item">Foods</li>
-          <ul class="menu__main__sub">
-            <li><a href="#">베이커리</a></li>
-            <li><a href="#">케잌</a></li>
-            <li><a href="#">샌드위치 & 샐러드</a></li>
-          </ul>
+        <ul class="menu__main__sub">
+          <li><a href="#">베이커리</a></li>
+          <li><a href="#">케잌</a></li>
+          <li><a href="#">샌드위치 & 샐러드</a></li>
+        </ul>
         <li class="menu__main--item">Products</li>
-          <ul class="menu__main__sub">
-            <li><a href="#">머그</a></li>
-            <li><a href="#">텀블러</a></li>
-            <li><a href="#">커피용품</a></li>
-          </ul>
+        <ul class="menu__main__sub">
+          <li><a href="#">머그</a></li>
+          <li><a href="#">텀블러</a></li>
+          <li><a href="#">커피용품</a></li>
+        </ul>
         <li class="menu__main--item">Lectures</li>
-          <ul class="menu__main__sub">
-            <li><a href="#">UI 구조 & 디자인</a></li>
-            <li><a href="#">UI 인터렉션 주니어</a></li>
-            <li><a href="#">리엑트 프로그래밍</a></li>
-          </ul>
+        <ul class="menu__main__sub">
+          <li><a href="#">UI 구조 & 디자인</a></li>
+          <li><a href="#">UI 인터렉션 주니어</a></li>
+          <li><a href="#">리엑트 프로그래밍</a></li>
+        </ul>
         <li class="menu__main--item">Customer Service
           <ul class="menu__main__sub">
             <li><a href="#">공지사항</a></li>
@@ -71,14 +74,65 @@
   <main>
     <section class="recommend-beverage"></section>
     <section class="recommend-lecture"></section>
-    <section class="review"></section>
-    <section class="video"></section>
-    <section class="reserve"></section>
+
+    <section class="review">
+      <h2 class="review-heading" id="review-heading">강의 리뷰</h2>
+      <article class="review-article">
+        <h3 class="review-article__heading">무엇이 중요한지 알게된 시간!</h3>
+        <p class="review-article-__brief">
+          <q>제가 들었던 해외 튜토리얼에 비해
+            시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다.
+            많은 튜토리얼들이 디자인을 어떻게
+            구현하는지에만 초점이 맞춰져 있잖아요.
+            무엇이 중요한지 알게되어 많은 도음이 되었습니다.</q>
+          우정민
+        </p>
+        <div class="review-article__score">
+          <span class="star-score">*****</span><em>5점</em>
+        </div>
+      </article>
+      <button class="review-more" type="button" aria-labelledby="reviewHeading">다음 리뷰</button>
+      <section class="lecture">
+        <h2 class="lecture-heading" id="lectureHeading">카페 W 인기 강좌</h2>
+        <ol class="lecture-list">
+          <li><a href="#">UI 구조 & 디자인</a><span class="up">상승</span></li>
+          <li><a href="#">모바일 웹 UI 제작 실습</a><span class="down">하락</span></li>
+          <li><a href="#">UI 인터렉션 주니어</a><span class="stop">멈춤</span></li>
+          <li><a href="#">React 프로그래밍</a><span class="up">상승</span></li>
+        </ol>
+        <a class="popular-more" href="#" aria-labelledby="lectureHeading" title="카페 W 인기 강좌">더보기</a>
+      </section>
+      <section class="brochure">
+        <a href="#">
+          <h2>브로슈어 다운받기</h2>
+          <img src="#" alt="카페 W 브로슈어 다운 받기">
+        </a>
+      </section>
+    </section>
+
+    <section class="video">
+      <h2 class="a11y-hidden">카페W 상품 가격 및 할인율 영상</h2>
+      <video controls width="960">
+        <source src="" type="video/webm">
+      </video>
+    </section>
+
+    <section class="reserve">
+      <section class="reservation">
+        <h2 class="reservation-heading" id="reservationHeading">CAFE W . RESERVE</h2>
+        <p class="reservation-text">
+          <span>A DELICATE FRAGRANCE</span>
+          <span>입 안 가득 퍼지는 산뜻하고 따뜻한 봄의 향기</span>
+        </p>
+        <a href="#" class="reserve-more" aria-labelledby="reservationHeading">자세히 보기</a>
+      </section>
+    </section>
+
     <section class="w-card"></section>
     <section class="lab"></section>
     <section class="store"></section>
   </main>
-  
+
   <footer class="footer">
     <img src="./img/footer/Cafe W (Vertical).svg" alt="CAFE W">
     <ul class="about-us">
@@ -91,11 +145,14 @@
       <li><a href="#">사이트맵</a></li>
     </ul>
     <address>
-      서울시 강남구 테헤란로 10길 18 K&I 타워 카페 W (2F)<span class="divider">|</span>연락처 : <a href="tel:0269512121">02-6951-2121</a> 사업자 등록번호 : 107-86-16302<span class="divider">|</span>통신판매업 신고 : 강남 제 002519호<span class="divider">|</span>대표이사 : 김데레사
+      서울시 강남구 테헤란로 10길 18 K&I 타워 카페 W (2F)<span class="divider">|</span>연락처 : <a href="tel:0269512121">02-6951-2121</a>
+      사업자 등록번호 : 107-86-16302<span class="divider">|</span>통신판매업 신고 : 강남 제 002519호<span class="divider">|</span>대표이사 :
+      김데레사
     </address>
     <small>
       © 2020 CAFE W COMPANY. ALL rights reserved.
     </small>
   </footer>
 </body>
+
 </html>
