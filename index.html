@@ -69,8 +69,245 @@
   </header>
 
   <main>
-    <section class="recommend-beverage"></section>
-    <section class="recommend-lecture"></section>
+    <section class="recommend-beverage">
+        <h2 class="a11y-hidden">Cafe W의 계절메뉴</h2>
+        <p class="recommend-beverage-text">Spring is a cup
+          <span>of</span>
+          <!-- css 참조: https://stackoverflow.com/questions/23584120/line-before-and-after-title-over-image-->
+          <em>CHOUX CREAM</em>
+        </p>
+        <p class="recommend-beverage-text">봄이 왔다 커피가 설렌다</p>
+        <ul class="recommend-beverage-list">
+          <li>
+            <figure>
+              <figcaption id="beverageOne">
+                <p lang="en">Strawberry Layer Choux Cream Frappucino</p>
+                <p>딸기 레이어 슈 크림 프라푸치노</p>
+              </figcaption>
+              <a href="#">
+                <img src="" alt aria-labelledby="beverageOne">
+              </a>
+            </figure>
+      
+          </li>
+          <li>
+            <figure>
+              <figcaption id="beverageTwo">
+                <p lang="en">Choux Cream Latte</p>
+                <p>슈 크림 라떼</p>
+              </figcaption>
+              <a href="#">
+                <img src="" alt="" aria-labelledby="beverageTwo">
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <figcaption id="beverageThree">
+                <p lang="en">Spring Peach Green Tea</p>
+                <p>스프링 피치 크린 티</p>
+              </figcaption>
+              <a href="#">
+                <img src="" alt="" aria-labelledby="beverageThree">
+              </a>
+            </figure>
+          </li>
+        </ul>
+        <a href="#" class="see-all">자세히 보기</a>
+    </section>
+
+    <!-- 추천강좌 섹션을 옵션 1 -->
+    <!-- 패널을 이용한 추천 강좌 섹션. 자바스크립트 없이는 구현이 힘들것 같아 일단 보류 -->
+    <!-- <section class="recommended-lecture">
+        <div class="lecture-tabs">
+            <div role="tablist" aria-label="추천 강좌">
+              <button role="tab"
+                      aria-selected="true"
+                      aria-controls="multiCampusPanel"
+                      id="multiCampusTab">
+                멀티 캠퍼스 추천 강좌
+              </button>
+              <button role="tab"
+                      aria-selected="false"
+                      aria-controls="edumPanel"
+                      id="edumTab"
+                      tabindex="-1"></button>
+                이듬 블랜디드 러닝 추천 강좌
+              </button>
+            </div>
+            <div tabindex="0"
+                 role="tabpanel"
+                 id="multiCampusPanel"
+                 aria-labelledby="multiCampusTab"
+                 hidden>
+              <p>
+                컨텐츠 영역
+              </p>
+            </div>
+            <div tabindex="0"
+                 role="tabpanel"
+                 id="edumPanel"
+                 aria-labelledby="edumTab"
+                 >
+              <p>
+                컨텐츠 영역
+              </p>
+            </div>
+          </div>
+    </section> -->
+
+    <!-- 추천강좌 섹션을 옵션 2 -->
+    <section class="recommend-lecture">
+      <h2 class="a11y-hidden">Cafe W의 추천 강좌</h2>
+      <section class="recommend-lecture-multicampus">
+        <h3 class="recommend-lecture-heading tab">
+          <a href="#" role="button">
+            <strong>멀티 캠퍼스</strong>추천 강좌
+          </a>
+        </h3>
+        <ul class="recommend-lecture-list">
+          <li class="recommend-lecture-list__item card">
+            <!--미리 보기 부분-->
+            <div class="recommend-lecture-list__item--preview">
+              <p lang="en">GIT & HTML/CSS</p>
+              <p>입문자를 위한 GIT과 HTML&CSS</p>
+              <button class="button" aria-label="강의 정보 더보기" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>            
+            </div>
+            <!--숨겨진 모달 창-->
+            <div class="recommend-lecture-list__item--detail" role="dialog" aria-modal="false" aria-labelledby="multiLectureItem1"> 
+              <p id="multiLectureItem1" lang="en">GIT & HTML/CSS</p>
+              <p>입문자를 위한 GIT과 HTML&CSS</p>
+              <span class="lecture-rating">
+                <!--SVG 삽입-->
+                <span class="a11y-hidden">5점만점에</span>
+                <b>4점</b>
+              </span>
+              <table>
+                <tablecaption class="a11y-hidden">강의 세부 정보표</tablecaption>
+                <tbody>
+                  <tr>
+                    <th scope="row">학습시간</th>
+                    <td>09:00 ~ 17:00 (28시간)</td>
+                    <th scope="row">난이도</th>
+                    <td>초급</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">교육비 지원</th>
+                    <td>고용보험 비환급</td>
+                    <th scope="row">평가항목</th>
+                    <td>출석률 100%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">수료 기준</th>
+                    <td>총점 80점 이상시 수료</td>
+                    <th scope="row">정원</th>
+                    <td>24명</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">교재정보</th>
+                    <td colspan="2">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000) </td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="close-detail-btn button" title="닫기" aria-label="강좌 정보 패널 닫기">
+                <span class="ir"></span>
+              </button>
+            </div>
+          </li>
+          <li>
+            <button class="" title="멀티캠퍼스 이전 강좌 정보 보기" aria-label="멀티캠퍼스 이전 강좌 정보 보기"></button>
+          </li>
+          <li>
+            <button class="" title="멀티캠퍼스 다음 강좌 정보 보기" aria-label="멀티캠퍼스 다음 강좌 정보 보기"></button>
+          </li>
+        </ul>
+        <div class="indicator-container">
+          <button class="auto-play-btn" aria-label="자동재생 정지" title="자동재생 정지"></button>
+          <ul class="indicator-list">
+            <li class="indicator is--active">
+              <button aria-label="첫번째 슬라이드" aria-selected='true'>
+                <span class="ir"></span>
+              </button>
+            </li>
+            <li class="indicator">
+              <button aria-label="두번째 슬라이드">
+                <span class="ir"></span>
+              </button>
+            </li>
+            <li class="indicator">
+              <button aria-label="세번째 슬라이드">
+                <span class="ir"></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 멀티 캠퍼스 섹션 끝-->
+      <section class="recommend-lecture-edum">
+        <h3 class="recommend-lecture-heading tab">
+          <a href="#" role="button">
+            <strong>이듬 블렌디드 러닝</strong>추천 강좌
+          </a>
+        </h3>
+        <ul class="recommend-lecture-list">
+            <li class="recommend-lecture-list__item card">
+                <!--미리 보기 부분-->
+                <div class="recommend-lecture-list__item--preview">
+                  <p lang="en">UI Structure & Design Course</p>
+                  <p>UI 구조 디자인 과정</p>
+                  <button class="button" aria-label="강의 정보 더보기" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>            
+                </div>
+                <!--숨겨진 모달 창-->
+                <div class="recommend-lecture-list__item--detail" role="dialog" aria-modal="false" aria-labelledby="EdumLectureItem1"> 
+                  <p id="EdumLectureItem1" lang="en">UI Structure $ Design Course</p>
+                  <p>UI 구조 디자인 과정</p>
+                  <span class="lecture-rating">
+                    <!--SVG 삽입-->
+                    <span class="a11y-hidden">5점만점에</span>
+                    <b>4점</b>
+                  </span>
+                  <table>
+                    <tablecaption class="a11y-hidden">강의 세부 정보표</tablecaption>
+                    <tbody>
+                      <tr>
+                        <th scope="row">학습시간</th>
+                        <td>09:00 ~ 17:00 (28시간)</td>
+                        <th scope="row">난이도</th>
+                        <td>초급</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">교육비 지원</th>
+                        <td>고용보험 비환급</td>
+                        <th scope="row">평가항목</th>
+                        <td>출석률 100%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">수료 기준</th>
+                        <td>총점 80점 이상시 수료</td>
+                        <th scope="row">정원</th>
+                        <td>24명</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">교재정보</th>
+                        <td colspan="2">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000) </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button type="button" class="close-detail-btn button" title="닫기" aria-label="강좌 정보 패널 닫기">
+                    <span class="ir"></span>
+                  </button>
+                </div>
+              </li>
+              <li>
+                  <button class="" title="이듬 이전 강좌 정보 보기" aria-label="이듬 이전 강좌 정보 보기"></button>
+                </li>
+                <li>
+                  <button class="" title="이듬 다음 강좌 정보 보기" aria-label="이듬 다음 강좌 정보 보기"></button>
+              </li>
+        </ul>
+      </section>
+      <!-- 이듬 섹션 끝-->
+    </section> <!--추천 강좌 섹션 끝-->
     <section class="review"></section>
     <section class="video"></section>
     <section class="reserve"></section>
