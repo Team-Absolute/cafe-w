@@ -102,7 +102,7 @@
           </div>
           
           <div>
-            <label for="signUpName">이름<span class="a11y-hidden">필수 입력</span>*</sup></label>
+            <label for="signUpName">이름<sup><span class="a11y-hidden">필수 입력</span>*</sup></label>
             <input class="sign-up__name" id="signUpName" type="text" name="name" placeholder="예) 김데레사" aria-required="true">
           </div>
           
@@ -120,8 +120,8 @@
             <!-- 생년월일 타이틀, 그 묶음으로 셀렉트 세 개, dl로 묶음 -->
             <dt>생년월일</dt>
             <dd>
-              <label for="birthYear"></label>
-              <select name="year" class="sign-up__year" id="signUpYear" required>
+              <label for="signUpYear"></label>
+              <select name="year" class="sign-up__year" id="signUpYear" aria-required="true">
                 <optgroup label="년도">
                   <option value="" disabled selected>년도</option>
                   <option value="year">2020</option>
@@ -134,7 +134,7 @@
                 </optgroup>
               </select>
               <label for="signUpMonth">월</label>
-              <select name="month" class="sign-up__month" id="signUpMonth" required>
+              <select name="month" class="sign-up__month" id="signUpMonth" aria-required="true">
                 <optgroup label="월">
                   <option value="" disabled selected>월</option>
                   <option value="month">1</option>
@@ -152,7 +152,7 @@
                 </optgroup>
               </select>
               <label for="signUpDay">일</label>
-              <select name="day" class="sign-up__day" id="signUpDay" required>
+              <select name="day" class="sign-up__day" id="signUpDay" aria-required="true">
                 <optgroup label="일">
                   <option value="" disabled selected>일</option>
                   <option value="day">1</option>
@@ -189,7 +189,7 @@
                 </optgroup>
               </select>
               <label for="signUpCalanderType"></label>
-              <select name="calander-type" id="signUpCalanderType" required>
+              <select name="calander-type" id="signUpCalanderType" aria-required="true">
                 <optgroup label="양력">
                   <option value="year">양력</option>
                   <option value="year">음력</option>
