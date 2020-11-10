@@ -145,7 +145,7 @@
             </dl>
             <button class="more-button" aria-labelledby="multiCampusLectureItem1" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>  
             <!--숨겨진 모달 창-->
-            <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="multiLectureItem1"> 
+            <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="multiItemDialog1"> 
               <h4 id="multiItemDialog1" lang="en">GIT & HTML/CSS</h4>
               <p>입문자를 위한 GIT과 HTML&CSS</p>
               <span class="rating">
@@ -157,26 +157,26 @@
                 <caption class="a11y-hidden">강의 세부 정보표</caption>
                 <tbody>
                   <tr>
-                    <th id="header1">학습시간</th> 
-                    <td headers="header1">09:00 ~ 17:00 (28시간)</td>
-                    <th id="header2">난이도</th>
-                    <td headers="header2">초급</td>
+                    <th scope="row">학습시간</th> 
+                    <td>09:00 ~ 17:00 (28시간)</td>
+                    <th scope="row">난이도</th>
+                    <td>초급</td>
                   </tr>
                   <tr>
-                    <th id="header3">교육비 지원</th>
-                    <td headers="header3">고용보험 비환급</td>
-                    <th id="header4">평가항목</th>
-                    <td headers="header4">출석률 100%</td>
+                    <th scope="row">교육비 지원</th>
+                    <td>고용보험 비환급</td>
+                    <th scope="row">평가항목</th>
+                    <td>출석률 100%</td>
                   </tr>
                   <tr>
-                    <th id="header5">수료 기준</th>
-                    <td headers="header5">총점 80점 이상시 수료</td>
-                    <th id="header6">정원</th>
-                    <td headers="header6">24명</td>
+                    <th scope="row">수료 기준</th>
+                    <td>총점 80점 이상시 수료</td>
+                    <th scope="row">정원</th>
+                    <td>24명</td>
                   </tr>
                   <tr>
-                    <th id="header7">교재정보</th>
-                    <td colspan="3" headers="header7">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
+                    <th scope="row">교재정보</th>
+                    <td colspan="3">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
                   </tr>
                 </tbody>
               </table>
@@ -193,7 +193,7 @@
             </dl>
             <button class="more-button" aria-labelledby="multiCampusLectureItem2" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>  
             <!--숨겨진 모달 창-->
-            <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="multiLectureItem2"> 
+            <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="multiItemDialog2"> 
               <h4 id="multiItemDialog2" lang="en">Responsive Web Design Strategies</h4>
               <p>반응형 웹디자인 전략</p>
               <span class="rating">
@@ -205,26 +205,26 @@
                 <caption class="a11y-hidden">강의 세부 정보표</caption>
                 <tbody>
                   <tr>
-                    <th id="header1">학습시간</th> 
-                    <td headers="header1">09:00 ~ 17:00 (28시간)</td>
-                    <th id="header2">난이도</th>
-                    <td headers="header2">초급</td>
+                    <th scope="row">학습시간</th> 
+                    <td>09:00 ~ 17:00 (28시간)</td>
+                    <th scope="row">난이도</th>
+                    <td>초급</td>
                   </tr>
                   <tr>
-                    <th id="header3">교육비 지원</th>
-                    <td headers="header3">고용보험 비환급</td>
-                    <th id="header4">평가항목</th>
-                    <td headers="header4">출석률 100%</td>
+                    <th scope="row">교육비 지원</th>
+                    <td>고용보험 비환급</td>
+                    <th scope="row">평가항목</th>
+                    <td>출석률 100%</td>
                   </tr>
                   <tr>
-                    <th id="header5">수료 기준</th>
-                    <td headers="header5">총점 80점 이상시 수료</td>
-                    <th id="header6">정원</th>
-                    <td headers="header6">24명</td>
+                    <th scope="row">수료 기준</th>
+                    <td>총점 80점 이상시 수료</td>
+                    <th scope="row">정원</th>
+                    <td>24명</td>
                   </tr>
                   <tr>
-                    <th id="header7">교재정보</th>
-                    <td colspan="3" headers="header7">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
+                    <th scope="row">교재정보</th>
+                    <td colspan="3">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
                   </tr>
                 </tbody>
               </table>
@@ -242,17 +242,17 @@
           <button class="play-btn" type="button" aria-label="자동재생 정지" title="자동재생 정지"></button>
           <ul class="indicators__list">
             <li class="indicators__item">
-              <button aria-label="첫번째 슬라이드" aria-selected='true' title="첫번째 슬라이드">
+              <button type="button" aria-label="첫번째 슬라이드" title="첫번째 슬라이드">
                 <span class="ir"></span>
               </button>
             </li>
             <li class="indicators__item">
-              <button aria-label="두번째 슬라이드" aria-selected="false" title="두번째 슬라이드">
+              <button type="button" aria-label="두번째 슬라이드" title="두번째 슬라이드">
                 <span class="ir"></span>
               </button>
             </li>
             <li class="indicators__item">
-              <button aria-label="세번째 슬라이드" aria-selected="false" title="세번째 슬라이드">
+              <button type="button" aria-label="세번째 슬라이드" title="세번째 슬라이드">
                 <span class="ir"></span>
               </button>
             </li>
@@ -276,7 +276,7 @@
               </dl>
               <button class="more-button" aria-labelledby="edumLectureItem1" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>   
               <!--숨겨진 모달 창-->
-              <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="EdumLectureItem1"> 
+              <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="edumItemDialog1"> 
                 <h4 id="edumItemDialog1" lang="en">UI Structure $ Design Course</h4>
                 <p>UI 구조 디자인 과정</p>
                 <span class="lecture-rating">
@@ -285,31 +285,31 @@
                   <b>4점</b>
                 </span>
                 <table>
-                  <caption class="a11y-hidden">강의 세부 정보표</caption>
+                  <caption class="a11y-hidden">강의 세부 정보 표</caption>
                   <tbody>
-                      <tr>
-                        <th id="header1">학습시간</th> 
-                        <td headers="header1">09:00 ~ 17:00 (28시간)</td>
-                        <th id="header2">난이도</th>
-                        <td headers="header2">초급</td>
-                      </tr>
-                      <tr>
-                        <th id="header3">교육비 지원</th>
-                        <td headers="header3">고용보험 비환급</td>
-                        <th id="header4">평가항목</th>
-                        <td headers="header4">출석률 100%</td>
-                      </tr>
-                      <tr>
-                        <th id="header5">수료 기준</th>
-                        <td headers="header5">총점 80점 이상시 수료</td>
-                        <th id="header6">정원</th>
-                        <td headers="header6">24명</td>
-                      </tr>
-                      <tr>
-                        <th id="header7">교재정보</th>
-                        <td colspan="3" headers="header7">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
-                      </tr>
-                    </tbody>
+                    <tr>
+                      <th scope="row">학습시간</th> 
+                      <td>09:00 ~ 17:00 (28시간)</td>
+                      <th scope="row">난이도</th>
+                      <td>초급</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">교육비 지원</th>
+                      <td>고용보험 비환급</td>
+                      <th scope="row">평가항목</th>
+                      <td>출석률 100%</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">수료 기준</th>
+                      <td>총점 80점 이상시 수료</td>
+                      <th scope="row">정원</th>
+                      <td>24명</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">교재정보</th>
+                      <td colspan="3">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
+                    </tr>
+                  </tbody>
                 </table>
                 <button type="button" class="close-btn button" title="닫기" aria-labelledby="edumItemDialog1">
                   <span class="ir"></span>
@@ -325,7 +325,7 @@
               </dl>
               <button class="more-button" aria-labelledby="edumLectureItem2" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>   
               <!--숨겨진 모달 창-->
-              <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="EdumLectureItem2"> 
+              <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="edumItemDialog2"> 
                 <h4 id="edumItemDialog2" lang="en">UI Interaction & Junior Course</h4>
                 <p>UI 인터렉션 주니어 과정</p>
                 <span class="lecture-rating">
@@ -334,31 +334,31 @@
                   <b>4점</b>
                 </span>
                 <table>
-                  <caption class="a11y-hidden">강의 세부 정보표</caption>
+                  <caption class="a11y-hidden">강의 세부 정보 표</caption>
                   <tbody>
-                      <tr>
-                        <th id="header1">학습시간</th> 
-                        <td headers="header1">09:00 ~ 17:00 (28시간)</td>
-                        <th id="header2">난이도</th>
-                        <td headers="header2">초급</td>
-                      </tr>
-                      <tr>
-                        <th id="header3">교육비 지원</th>
-                        <td headers="header3">고용보험 비환급</td>
-                        <th id="header4">평가항목</th>
-                        <td headers="header4">출석률 100%</td>
-                      </tr>
-                      <tr>
-                        <th id="header5">수료 기준</th>
-                        <td headers="header5">총점 80점 이상시 수료</td>
-                        <th id="header6">정원</th>
-                        <td headers="header6">24명</td>
-                      </tr>
-                      <tr>
-                        <th id="header7">교재정보</th>
-                        <td colspan="3" headers="header7">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
-                      </tr>
-                    </tbody>
+                    <tr>
+                      <th scope="row">학습시간</th> 
+                      <td>09:00 ~ 17:00 (28시간)</td>
+                      <th scope="row">난이도</th>
+                      <td>초급</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">교육비 지원</th>
+                      <td>고용보험 비환급</td>
+                      <th scope="row">평가항목</th>
+                      <td>출석률 100%</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">수료 기준</th>
+                      <td>총점 80점 이상시 수료</td>
+                      <th scope="row">정원</th>
+                      <td>24명</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">교재정보</th>
+                      <td colspan="3">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
+                    </tr>
+                  </tbody>
                 </table>
                 <button type="button" class="close-btn button" title="닫기" aria-labelledby="edumItemDialog2">
                   <span class="ir"></span>
@@ -374,7 +374,7 @@
               </dl>
               <button class="more-button" aria-labelledby="edumLectureItem3" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>   
               <!--숨겨진 모달 창-->
-              <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="EdumLectureItem3"> 
+              <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="edumItemDialog3"> 
                 <h4 id="edumItemDialog3" lang="en">React Course</h4>
                 <p>React 프로그래밍 과정</p>
                 <span class="lecture-rating">
@@ -383,31 +383,31 @@
                   <b>4점</b>
                 </span>
                 <table>
-                  <caption class="a11y-hidden">강의 세부 정보표</caption>
+                  <caption class="a11y-hidden">강의 세부 정보 표</caption>
                   <tbody>
-                      <tr>
-                        <th id="header1">학습시간</th> 
-                        <td headers="header1">09:00 ~ 17:00 (28시간)</td>
-                        <th id="header2">난이도</th>
-                        <td headers="header2">초급</td>
-                      </tr>
-                      <tr>
-                        <th id="header3">교육비 지원</th>
-                        <td headers="header3">고용보험 비환급</td>
-                        <th id="header4">평가항목</th>
-                        <td headers="header4">출석률 100%</td>
-                      </tr>
-                      <tr>
-                        <th id="header5">수료 기준</th>
-                        <td headers="header5">총점 80점 이상시 수료</td>
-                        <th id="header6">정원</th>
-                        <td headers="header6">24명</td>
-                      </tr>
-                      <tr>
-                        <th id="header7">교재정보</th>
-                        <td colspan="3" headers="header7">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
-                      </tr>
-                    </tbody>
+                    <tr>
+                      <th scope="row">학습시간</th> 
+                      <td>09:00 ~ 17:00 (28시간)</td>
+                      <th scope="row">난이도</th>
+                      <td>초급</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">교육비 지원</th>
+                      <td>고용보험 비환급</td>
+                      <th scope="row">평가항목</th>
+                      <td>출석률 100%</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">수료 기준</th>
+                      <td>총점 80점 이상시 수료</td>
+                      <th scope="row">정원</th>
+                      <td>24명</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">교재정보</th>
+                      <td colspan="3">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
+                    </tr>  
+                  </tbody>
                 </table>
                 <button type="button" class="close-btn button" title="닫기" aria-labelledby="edumItemDialog3">
                   <span class="ir"></span>
@@ -423,17 +423,17 @@
               <button class="play-btn" type="button" aria-label="자동재생 정지" title="자동재생 정지"></button>
               <ul class="indicators__list">
                 <li class="indicators__item">
-                  <button aria-label="첫번째 슬라이드" aria-selected='true' title="첫번째 슬라이드">
+                  <button type="button" aria-label="첫번째 슬라이드" title="첫번째 슬라이드">
                     <span class="ir"></span>
                   </button>
                 </li>
                 <li class="indicators__item">
-                  <button aria-label="두번째 슬라이드" aria-selected="false" title="두번째 슬라이드">
+                  <button type="button" aria-label="두번째 슬라이드" title="두번째 슬라이드">
                     <span class="ir"></span>
                   </button>
                 </li>
                 <li class="indicators__item">
-                  <button aria-label="세번째 슬라이드" aria-selected="false" title="세번째 슬라이드">
+                  <button type="button" aria-label="세번째 슬라이드" title="세번째 슬라이드">
                     <span class="ir"></span>
                   </button>
                 </li>
@@ -447,10 +447,14 @@
       <h2 class="a11y-hidden" id="reviewHeading">강의 리뷰</h2>
       <article class="review-article">
         <h3 class="review-article__heading">무엇이 중요한지 알게된 시간!</h3>
-        <p class="review-article__brief">
-          <blockquote>제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</blockquote>
-          우정민
-        </p>
+        <blockquote cite="#">
+          <p>
+            제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다. 
+            많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 
+            무엇이 중요한지 알게되어 많은 도음이 되었습니다.
+          </p>
+          <footer>우정민 <cite>멀티캠퍼스 리뷰란</cite></footer>
+        </blockquote>
         <span class="rating">
           <!-- 별모양 svg로 삽입 -->
           <span class="a11y-hidden">별점 5점 만점에</span>
@@ -493,7 +497,7 @@
         <span lang="en">A DELICATE FRAGRANCE</span>
         <span>입 안 가득 퍼지는 산뜻하고 따뜻한 봄의 향기</span>
       </p>
-      <a href="#" class="reserve__more"tltle="예약 자세히 보기" aria-labelledby="reserveHeading">자세히 보기</a>
+      <a href="#" class="reserve__more" title="예약 자세히 보기" aria-labelledby="reserveHeading">자세히 보기</a>
     </section>
 
     <section class="w-card">
@@ -514,7 +518,7 @@
       </ul>
       <!-- 이미지 목록으로 묶음. 별다른 의미는 없는 듯? 후에 이미지가 추가 됐을 때, 목록에 추가 되는 개념.
          이미지가 겹쳐져 보이는 시안인데, 호버된 이미지를 앞으로 보이게 해도 괜찮을 듯. z-index -->
-      <a class="w-card__more a-button" href="#" aria-labelledby="wCardHeadline" title="W 카드 자세히 보기">자세히 보기</a>
+      <a class="w-card__more a-button" href="#" aria-labelledby="wCardHeading" title="W 카드 자세히 보기">자세히 보기</a>
     </section>
 
     <section class="lab">
