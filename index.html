@@ -13,7 +13,7 @@
   <span><a href="#">본문 바로가기</a></span>
   <!-- body 맨 위에 본문 바로가기 -->
   <header class="header">
-    <h1 class="header__heading"><a href="#"><img src="./img/header/Cafe W (Horizontal, Dark).svg" alt="CAFE W"></a></h1>
+    <h1 class="header__heading"><a href="#"><img src="" alt="CAFE W"></a></h1>
     <section class="member">
       <h2 class="a11y-hidden">로그인 및 회원 가입</h2>
       <ul class="member__menu">
@@ -35,30 +35,34 @@
     <nav class="navigation">
       <h2 class="a11y-hidden">메뉴</h2>
       <ul class="navigation__list">
-        <li class="navigation__main-item">Drinks</li>
+        <li class="navigation__main-item">Drinks
           <ul class="navigation__sub-list">
             <li><a href="#">콜드 브루</a></li>
             <li><a href="#">에스프레소</a></li>
             <li><a href="#">기타 제조 음료</a></li>
           </ul>
-        <li class="navigation__main-item">Foods</li>
+        </li>  
+        <li class="navigation__main-item">Foods
           <ul class="navigation__sub-list">
             <li><a href="#">베이커리</a></li>
             <li><a href="#">케잌</a></li>
             <li><a href="#">샌드위치 & 샐러드</a></li>
           </ul>
-        <li class="navigation__main-item">Products</li>
+        </li> 
+        <li class="navigation__main-item">Products
           <ul class="navigation__sub-list">
             <li><a href="#">머그</a></li>
             <li><a href="#">텀블러</a></li>
             <li><a href="#">커피용품</a></li>
           </ul>
-        <li class="navigation__main-item">Lectures</li>
+        </li>  
+        <li class="navigation__main-item">Lectures
           <ul class="navigation__sub-list">
             <li><a href="#">UI 구조 & 디자인</a></li>
             <li><a href="#">UI 인터렉션 주니어</a></li>
             <li><a href="#">리엑트 프로그래밍</a></li>
           </ul>
+        </li>  
         <li class="navigation__main-item">Customer Service
           <ul class="navigation__sub-list">
             <li><a href="#">공지사항</a></li>
@@ -71,8 +75,373 @@
   </header>
 
   <main>
-    <section class="recommend-beverage"></section>
-    <section class="recommend-lecture"></section>
+
+    <section class="recommend-beverage">
+        <h2 class="a11y-hidden">Cafe W의 추천메뉴</h2>
+        <p lang="en" class="recommend-beverage__subject">Spring is a cup
+          <span>of</span>
+          <!-- css 참조: https://stackoverflow.com/questions/23584120/line-before-and-after-title-over-image-->
+          <em>CHOUX CREAM</em>
+        </p>
+        <p class="recommend-beverage__desc">봄이 왔다 커피가 설렌다</p>
+        <ul class="recommend-beverage__list">
+          <li>
+            <figure>
+              <a href="#">
+                <img src="" alt="" aria-labelledby="beverageOne">
+              </a>
+              <figcaption id="beverageOne">
+                <a href="#">
+                  <p lang="en">Strawberry Layer Choux Cream Frappucino</p>
+                  <p>딸기 레이어 슈 크림 프라푸치노</p>
+                </a>
+              </figcaption>
+            </figure> 
+          </li>
+          <li>
+            <figure>
+              <a href="#">
+                <img src="" alt="" aria-labelledby="beverageTwo">
+              </a>
+              <figcaption id="beverageTwo">
+                <a href="#">
+                  <p lang="en">Choux Cream Latte</p>
+                  <p>슈 크림 라떼</p>
+                </a>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="#">
+                <img src="" alt="" aria-labelledby="beverageThree">
+              </a>
+              <figcaption id="beverageThree">
+                <a href="#">
+                  <p lang="en">Spring Peach Green Tea</p>
+                  <p>스프링 피치 그린 티</p>
+                </a>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <a href="#" class="see-all a-button">자세히 보기</a>
+    </section>
+ 
+    <section class="recommend-lecture">
+      <h2 class="a11y-hidden">Cafe W의 추천 강좌</h2>
+      <section class="multicampus-lecture">
+        <h3 class="multicampus-lecture__heading" id="multiHeading">
+          <a href="#" role="button">
+            <strong>멀티 캠퍼스</strong>추천 강좌
+          </a>
+        </h3>
+        <ul class="multicampus-lecture__list">
+          <li class="multicampus-lecture__item">
+            <!--미리 보기 부분-->
+            <dl>
+              <dt id="multiCampusLectureItem1">GIT & HTML/CSS</dt>
+              <dd>입문자를 위한 GIT과 HTML&CSS</dd>          
+            </dl>
+            <button class="more-button" aria-labelledby="multiCampusLectureItem1" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>  
+            <!--숨겨진 모달 창-->
+            <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="multiLectureItem1"> 
+              <h4 id="multiItemDialog1" lang="en">GIT & HTML/CSS</h4>
+              <p>입문자를 위한 GIT과 HTML&CSS</p>
+              <span class="rating">
+                <!--SVG 삽입-->
+                <span class="a11y-hidden">별점 5점만점에</span>
+                <em>4점</em>
+              </span>
+              <table class="lecture-detail__table">
+                <caption class="a11y-hidden">강의 세부 정보표</caption>
+                <tbody>
+                  <tr>
+                    <th id="header1">학습시간</th> 
+                    <td headers="header1">09:00 ~ 17:00 (28시간)</td>
+                    <th id="header2">난이도</th>
+                    <td headers="header2">초급</td>
+                  </tr>
+                  <tr>
+                    <th id="header3">교육비 지원</th>
+                    <td headers="header3">고용보험 비환급</td>
+                    <th id="header4">평가항목</th>
+                    <td headers="header4">출석률 100%</td>
+                  </tr>
+                  <tr>
+                    <th id="header5">수료 기준</th>
+                    <td headers="header5">총점 80점 이상시 수료</td>
+                    <th id="header6">정원</th>
+                    <td headers="header6">24명</td>
+                  </tr>
+                  <tr>
+                    <th id="header7">교재정보</th>
+                    <td colspan="3" headers="header7">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="close-btn button" title="닫기" aria-labelledby="multiItemDialog1">
+                <span class="ir"></span>
+              </button>
+            </div>
+          </li>    
+          <li class="multicampus-lecture__item">
+              <!--미리 보기 부분-->
+            <dl>
+              <dt id="multiCampusLectureItem2">Responsive Web Design Strategies</dt>
+              <dd>반응형 웹디자인 전략</dd>          
+            </dl>
+            <button class="more-button" aria-labelledby="multiCampusLectureItem2" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>  
+            <!--숨겨진 모달 창-->
+            <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="multiLectureItem2"> 
+              <h4 id="multiItemDialog2" lang="en">Responsive Web Design Strategies</h4>
+              <p>반응형 웹디자인 전략</p>
+              <span class="rating">
+                <!--SVG 삽입-->
+                <span class="a11y-hidden">별점 5점만점에</span>
+                <em>4점</em>
+              </span>
+              <table class="lecture-detail__table">
+                <caption class="a11y-hidden">강의 세부 정보표</caption>
+                <tbody>
+                  <tr>
+                    <th id="header1">학습시간</th> 
+                    <td headers="header1">09:00 ~ 17:00 (28시간)</td>
+                    <th id="header2">난이도</th>
+                    <td headers="header2">초급</td>
+                  </tr>
+                  <tr>
+                    <th id="header3">교육비 지원</th>
+                    <td headers="header3">고용보험 비환급</td>
+                    <th id="header4">평가항목</th>
+                    <td headers="header4">출석률 100%</td>
+                  </tr>
+                  <tr>
+                    <th id="header5">수료 기준</th>
+                    <td headers="header5">총점 80점 이상시 수료</td>
+                    <th id="header6">정원</th>
+                    <td headers="header6">24명</td>
+                  </tr>
+                  <tr>
+                    <th id="header7">교재정보</th>
+                    <td colspan="3" headers="header7">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="close-btn button" title="닫기" aria-labelledby="multiItemDialog2">
+                <span class="ir"></span>
+              </button>
+            </div>
+          </li>  
+        </ul>
+        <div class="controls">
+          <button class="controls__btn-pre" title="멀티캠퍼스 이전 강좌 정보 보기" aria-labelledby="multiHeading"></button>
+          <button class="controls__btn-next" title="멀티캠퍼스 다음 강좌 정보 보기" aria-labelledby="multiHeading"></button>
+        </div>
+        <div class="indicators">
+          <button class="play-btn" type="button" aria-label="자동재생 정지" title="자동재생 정지"></button>
+          <ul class="indicators__list">
+            <li class="indicators__item">
+              <button aria-label="첫번째 슬라이드" aria-selected='true' title="첫번째 슬라이드">
+                <span class="ir"></span>
+              </button>
+            </li>
+            <li class="indicators__item">
+              <button aria-label="두번째 슬라이드" aria-selected="false" title="두번째 슬라이드">
+                <span class="ir"></span>
+              </button>
+            </li>
+            <li class="indicators__item">
+              <button aria-label="세번째 슬라이드" aria-selected="false" title="세번째 슬라이드">
+                <span class="ir"></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 멀티 캠퍼스 섹션 끝-->
+      <!-- 이듬 섹션 시작 -->
+      <section class="edum-lecture">
+          <h3 class="edum-lecture__heading" id="edumHeading">
+            <a href="#" role="button">
+              <strong>이듬 블렌디드 러닝</strong>추천 강좌
+            </a>
+          </h3>
+          <ul class="edum-lecture__list">
+            <li class="edum-lecture__item">
+              <!--미리 보기 부분-->
+              <dl>
+                <dt id="edumLectureItem1">UI Structure & Design Course</dt>
+                <dd>UI 구조 디자인 과정</dd>         
+              </dl>
+              <button class="more-button" aria-labelledby="edumLectureItem1" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>   
+              <!--숨겨진 모달 창-->
+              <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="EdumLectureItem1"> 
+                <h4 id="edumItemDialog1" lang="en">UI Structure $ Design Course</h4>
+                <p>UI 구조 디자인 과정</p>
+                <span class="lecture-rating">
+                  <!--SVG 삽입-->
+                  <span class="a11y-hidden">5점만점에</span>
+                  <b>4점</b>
+                </span>
+                <table>
+                  <caption class="a11y-hidden">강의 세부 정보표</caption>
+                  <tbody>
+                      <tr>
+                        <th id="header1">학습시간</th> 
+                        <td headers="header1">09:00 ~ 17:00 (28시간)</td>
+                        <th id="header2">난이도</th>
+                        <td headers="header2">초급</td>
+                      </tr>
+                      <tr>
+                        <th id="header3">교육비 지원</th>
+                        <td headers="header3">고용보험 비환급</td>
+                        <th id="header4">평가항목</th>
+                        <td headers="header4">출석률 100%</td>
+                      </tr>
+                      <tr>
+                        <th id="header5">수료 기준</th>
+                        <td headers="header5">총점 80점 이상시 수료</td>
+                        <th id="header6">정원</th>
+                        <td headers="header6">24명</td>
+                      </tr>
+                      <tr>
+                        <th id="header7">교재정보</th>
+                        <td colspan="3" headers="header7">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="close-btn button" title="닫기" aria-labelledby="edumItemDialog1">
+                  <span class="ir"></span>
+                </button>
+              </div>
+            </li>
+            <!--이듬 두번째 강의-->
+            <li class="edum-lecture__item">
+                <!--미리 보기 부분-->
+              <dl>
+                <dt id="edumLectureItem2">UI Interaction & Junior Course</dt>
+                <dd>UI 인터렉션 주니어 과정</dd>         
+              </dl>
+              <button class="more-button" aria-labelledby="edumLectureItem2" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>   
+              <!--숨겨진 모달 창-->
+              <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="EdumLectureItem2"> 
+                <h4 id="edumItemDialog2" lang="en">UI Interaction & Junior Course</h4>
+                <p>UI 인터렉션 주니어 과정</p>
+                <span class="lecture-rating">
+                  <!--SVG 삽입-->
+                  <span class="a11y-hidden">5점만점에</span>
+                  <b>4점</b>
+                </span>
+                <table>
+                  <caption class="a11y-hidden">강의 세부 정보표</caption>
+                  <tbody>
+                      <tr>
+                        <th id="header1">학습시간</th> 
+                        <td headers="header1">09:00 ~ 17:00 (28시간)</td>
+                        <th id="header2">난이도</th>
+                        <td headers="header2">초급</td>
+                      </tr>
+                      <tr>
+                        <th id="header3">교육비 지원</th>
+                        <td headers="header3">고용보험 비환급</td>
+                        <th id="header4">평가항목</th>
+                        <td headers="header4">출석률 100%</td>
+                      </tr>
+                      <tr>
+                        <th id="header5">수료 기준</th>
+                        <td headers="header5">총점 80점 이상시 수료</td>
+                        <th id="header6">정원</th>
+                        <td headers="header6">24명</td>
+                      </tr>
+                      <tr>
+                        <th id="header7">교재정보</th>
+                        <td colspan="3" headers="header7">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="close-btn button" title="닫기" aria-labelledby="edumItemDialog2">
+                  <span class="ir"></span>
+                </button>
+              </div>
+            </li> 
+              <!--이듬 세번째 강의-->
+            <li class="edum-lecture__item">
+                <!--미리 보기 부분-->
+              <dl>
+                <dt id="edumLectureItem3">React Course</dt>
+                <dd>React 프로그래밍 과정</dd>         
+              </dl>
+              <button class="more-button" aria-labelledby="edumLectureItem3" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>   
+              <!--숨겨진 모달 창-->
+              <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="EdumLectureItem3"> 
+                <h4 id="edumItemDialog3" lang="en">React Course</h4>
+                <p>React 프로그래밍 과정</p>
+                <span class="lecture-rating">
+                  <!--SVG 삽입-->
+                  <span class="a11y-hidden">5점만점에</span>
+                  <b>4점</b>
+                </span>
+                <table>
+                  <caption class="a11y-hidden">강의 세부 정보표</caption>
+                  <tbody>
+                      <tr>
+                        <th id="header1">학습시간</th> 
+                        <td headers="header1">09:00 ~ 17:00 (28시간)</td>
+                        <th id="header2">난이도</th>
+                        <td headers="header2">초급</td>
+                      </tr>
+                      <tr>
+                        <th id="header3">교육비 지원</th>
+                        <td headers="header3">고용보험 비환급</td>
+                        <th id="header4">평가항목</th>
+                        <td headers="header4">출석률 100%</td>
+                      </tr>
+                      <tr>
+                        <th id="header5">수료 기준</th>
+                        <td headers="header5">총점 80점 이상시 수료</td>
+                        <th id="header6">정원</th>
+                        <td headers="header6">24명</td>
+                      </tr>
+                      <tr>
+                        <th id="header7">교재정보</th>
+                        <td colspan="3" headers="header7">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="close-btn button" title="닫기" aria-labelledby="edumItemDialog3">
+                  <span class="ir"></span>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <div class="controls">
+              <button class="controls__btn-pre" title="이듬 이전 강좌 정보 보기" aria-labelledby="edumHeading"></button>
+              <button class="controls__btn-next" title="이듬 다음 강좌 정보 보기" aria-labelledby="edumHeading"></button>
+            </div>
+            <div class="indicators">
+              <button class="play-btn" type="button" aria-label="자동재생 정지" title="자동재생 정지"></button>
+              <ul class="indicators__list">
+                <li class="indicators__item">
+                  <button aria-label="첫번째 슬라이드" aria-selected='true' title="첫번째 슬라이드">
+                    <span class="ir"></span>
+                  </button>
+                </li>
+                <li class="indicators__item">
+                  <button aria-label="두번째 슬라이드" aria-selected="false" title="두번째 슬라이드">
+                    <span class="ir"></span>
+                  </button>
+                </li>
+                <li class="indicators__item">
+                  <button aria-label="세번째 슬라이드" aria-selected="false" title="세번째 슬라이드">
+                    <span class="ir"></span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+      </section>
+      <!-- 이듬 섹션 끝-->
+    </section> <!--추천 강좌 섹션 끝-->
 
     <section class="review">
       <h2 class="a11y-hidden" id="reviewHeading">강의 리뷰</h2>
@@ -201,18 +570,13 @@
       <li><a href="#">사이트맵</a></li>
     </ul>
     <address>
-<<<<<<< HEAD
-      서울시 강남구 테헤란로 10길 18 K&I 타워 카페 W (2F)<span class="divider" aria-hidden="true">|</span>연락처 : <a href="tel:0269512121">02-6951-2121</a> 사업자 등록번호 : 107-86-16302<span class="divider">|</span>통신판매업 신고 : 강남 제 002519호<span class="divider" aria-hidden="true">|</span>대표이사 : 김데레사
-=======
       서울시 강남구 테헤란로 10길 18 K&I 타워 카페 W (2F)<span class="divider">|</span>연락처 : <a href="tel:0269512121">02-6951-2121</a>
       사업자 등록번호 : 107-86-16302<span class="divider">|</span>통신판매업 신고 : 강남 제 002519호<span class="divider">|</span>대표이사 :
       김데레사
->>>>>>> b4d1cb3521910fe82bb2af7cc9f303301ade9393
     </address>
     <small>
       © 2020 CAFE W COMPANY. ALL rights reserved.
     </small>
   </footer>
 </body>
-
 </html>
