@@ -76,56 +76,60 @@
     <section class="recommend-lecture"></section>
 
     <section class="review">
-      <h2 class="review-heading" id="review-heading">강의 리뷰</h2>
+      <h2 class="a11y-hidden" id="reviewHeading">강의 리뷰</h2>
       <article class="review-article">
         <h3 class="review-article__heading">무엇이 중요한지 알게된 시간!</h3>
-        <p class="review-article-__brief">
-          <q>제가 들었던 해외 튜토리얼에 비해
+        <p class="review-article__brief">
+          <blockquote>제가 들었던 해외 튜토리얼에 비해
             시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다.
             많은 튜토리얼들이 디자인을 어떻게
             구현하는지에만 초점이 맞춰져 있잖아요.
-            무엇이 중요한지 알게되어 많은 도음이 되었습니다.</q>
+            무엇이 중요한지 알게되어 많은 도음이 되었습니다.</blockquote>
           우정민
         </p>
-        <div class="review-article__score">
-          <span class="star-score">*****</span><em>5점</em>
-        </div>
+        <span class="rating">
+          <!-- 별모양 svg로 삽입 -->
+          <span class="a11y-hidden">별점 5점 만점에</span>
+          <em>5점</em>
+        </span>
       </article>
-      <button class="review-more" type="button" aria-labelledby="reviewHeading">다음 리뷰</button>
-      <section class="lecture">
-        <h2 class="lecture-heading" id="lectureHeading">카페 W 인기 강좌</h2>
-        <ol class="lecture-list">
-          <li><a href="#">UI 구조 & 디자인</a><span class="up">상승</span></li>
-          <li><a href="#">모바일 웹 UI 제작 실습</a><span class="down">하락</span></li>
-          <li><a href="#">UI 인터렉션 주니어</a><span class="stop">멈춤</span></li>
-          <li><a href="#">React 프로그래밍</a><span class="up">상승</span></li>
-        </ol>
-        <a class="popular-more" href="#" aria-labelledby="lectureHeading" title="카페 W 인기 강좌">더보기</a>
-      </section>
-      <section class="brochure">
-        <a href="#">
-          <h2>브로슈어 다운받기</h2>
-          <img src="#" alt="카페 W 브로슈어 다운 받기">
-        </a>
-      </section>
+      <button class="play-btn" type="button" title="다음 리뷰 보기" aria-labelledby="reviewHeading">다음 리뷰</button>
     </section>
-
+  
+    <section class="popular-lecture">
+      <h2 class="popular-lecture__heading" id="popularLectureHeading">카페 W 인기 강좌</h2>
+      <ol class="popular-lecture__list">
+        <li><a href="#">UI 구조 & 디자인</a><span class="up ir">상승</span></li>
+        <li><a href="#">모바일 웹 UI 제작 실습</a><span class="down ir">하락</span></li>
+        <li><a href="#">UI 인터렉션 주니어</a><span class="stop ir">멈춤</span></li>
+        <li><a href="#">React 프로그래밍</a><span class="up ir">상승</span></li>
+      </ol>
+      <a class="popular-lecture__more" href="#" aria-labelledby="popularLectureHeading" title="카페 W 인기 강좌">더보기</a>
+    </section>
+  
+    <section class="brochure">
+      <a href="#">
+        <h2>브로슈어 다운받기</h2>
+      </a>
+      <a href="#" download>
+        <img src="#" alt="카페 W 브로슈어 다운 받기">
+      </a>
+    </section>
+  
     <section class="video">
       <h2 class="a11y-hidden">카페W 상품 가격 및 할인율 영상</h2>
       <video controls width="960">
         <source src="" type="video/webm">
       </video>
     </section>
-
+  
     <section class="reserve">
-      <section class="reservation">
-        <h2 class="reservation-heading" id="reservationHeading">CAFE W . RESERVE</h2>
-        <p class="reservation-text">
-          <span>A DELICATE FRAGRANCE</span>
-          <span>입 안 가득 퍼지는 산뜻하고 따뜻한 봄의 향기</span>
-        </p>
-        <a href="#" class="reserve-more" aria-labelledby="reservationHeading">자세히 보기</a>
-      </section>
+      <h2 class="reserve__heading" id="reserveHeading">CAFE W . RESERVE</h2>
+      <p class="reserve__brief">
+        <span lang="en">A DELICATE FRAGRANCE</span>
+        <span>입 안 가득 퍼지는 산뜻하고 따뜻한 봄의 향기</span>
+      </p>
+      <a href="#" class="reserve__more"tltle="예약 자세히 보기" aria-labelledby="reserveHeading">자세히 보기</a>
     </section>
 
     <section class="w-card"></section>
