@@ -18,5 +18,5 @@ a {
 }
 
 a:visited {
-  color: white;
+  color: currentColor;
 }

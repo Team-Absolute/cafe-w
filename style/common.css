@@ -26,7 +26,7 @@
   padding: 1em;
 }
 .about-us a:visited {
-  color: rgb(255, 252, 249);
+  color: currentColor;
 }
 svg {
   width: 4rem;
