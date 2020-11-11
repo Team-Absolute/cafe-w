@@ -1,4 +1,6 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-@import url(./default.css);
-@import url(./common.css);
 @import url(./reset.css);
+@import url(./default.css);
+@import url(./component.css);
+@import url(./common.css);
+@import url(./member.css);
