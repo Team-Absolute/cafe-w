@@ -102,6 +102,23 @@ body {
   margin-top: 17px;
 }
 
+/* 메인-추천 음료 */
+.recommend-beverage{
+  background-color: #F3D6B0;
+  display: flex;
+  flex-flow:column nowrap;
+}
+.recommend-beverage__subject{
+  font-size: 4rem;
+  margin: 83px 0 0 126px;
+  color:#A37356;
+  width: 290px;
+}
+.recommend-beverage__list img{
+  width: 238px;
+  height: 428px;
+}
+
 /* 푸터 */
 .footer {
   background-color: #282725;
