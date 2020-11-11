@@ -1,3 +1,4 @@
+
 body {
   background-color: blue;
 }
@@ -119,20 +120,21 @@ body {
   height: 428px;
 }
 
-/* 푸터 */
+/* 푸터 영역 */
+
 .footer {
   background-color: #282725;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   color: rgba(255, 252, 249, 0.6);
-  font-size: .8rem;
+  font-size: 1.2rem;
   padding: 30px 0;
 }
 
 .about-us {
   display: flex;
-  flex-wrap: row nowrap;
+  flex-wrap: row wrap;
   justify-content: center;
   width: 100%;
   order: -1;
@@ -178,14 +180,10 @@ address span {
   margin-top: 30px;
 }
 
-@media all and (max-width: 991px) {
-  .about-us li {
-    margin: 1px;
-  }
+@media all and (max-width: 1339px) {
 
-  .about-us a {
-    padding: 0;
-  }
 }
 
-@media all and (min-width: 992px) {}
+@media all and (min-width: 1400px) {
+
+}
