@@ -1,3 +1,176 @@
+/* section.review-group  */
+/* section review */
+.section-group {
+  width: 100%;
+  background-color: #7D6F5D;
+}
+.section-container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 30px 120px;
+  display: flex;
+  flex-flow: column wrap;
+  height: 484px;
+  justify-content: space-between;
+}
+.review {
+  background: url(../static/img/index/rivew/Box.png) no-repeat 0 0;
+  background-size: cover;
+  color: #FFFCF9;
+  padding: 90px;
+  padding-bottom: 60px;
+  width: 60%;
+  position: relative;
+}
+.review-article__heading {
+  font-size: 2rem;
+}
+.review-article__heading::before {
+  content: "";
+  display: block;
+  width: 100px;
+  border-top: 1px solid currentColor;
+  margin-bottom: 30px;
+}
+.review-article__brief {
+  margin-top: 30px;
+  font-size: 1.6rem;
+  text-align: justify;
+}
+.rating {
+  padding-top: 30px;
+}
+.rating em {
+  font-size: 2.2rem;
+}
+.review-artcle-name {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 30px 0;
+}
+.play-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: url(../static/svg/Play.svg) no-repeat 0 0;
+  width: 20px;
+  height: 21px;
+  padding-top: 21px;
+  overflow: hidden;
+  border: none;
+}
+
+/* section.popular-lecture */
+.popular-lecture {
+  width: 35%;
+  background-color: #FFFCF9;
+  color: #A37356;
+  padding: 30px;
+  position: relative;
+}
+.popular-lecture__heading {
+  font-size: 2rem;
+}
+.popular-lecture__list {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  padding-left: 1em;
+}
+.popular-lecture__list a {
+  display: inline-block;
+  padding: 3px 0;
+  margin: 2px 0;
+}
+.popular-lecture__list li {
+  display: flex;
+  justify-content: space-between;
+}
+.popular-lecture__list .up,
+.popular-lecture__list .down,
+.popular-lecture__list .stop { no-repeat;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  padding-top: 17px;
+  overflow: hidden;
+}
+.popular-lecture__list .up {
+  background: url(../static/svg/increase.svg)
+}
+.popular-lecture__list .down {
+  background: url(../static/svg/decrease.svg)
+}
+.popular-lecture__list .stop {
+  background: url(../static/svg/new.svg)
+}
+.popular-lecture__more {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+
+/* section.brochure */
+.brochure {
+  width: 35%;
+
+  background-color: #E27762;
+  padding: 30px;
+  position: relative;
+}
+.brochure a {
+  display: inline-block;
+  padding: 10px;
+  color: #FFFCF9;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.brochure__img {
+  width: 100%;
+  position: absolute;
+  top: -40px;
+  right: -50px;
+}
+
+
+
+
+/* section.video */
+.video{
+  background-color: #282725;
+}
+.video-container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 30px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.video-container video {
+  width: 960px;
+}
+.video-container:before,
+.video-container:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../static/svg/Star\ Symbol.svg) no-repeat;
+}
+.video-container:before {
+  background-position: 0 50%;
+}
+.video-container:after {
+  background-position: 100% 50%;
+}
+
 /* section.reserve */
 .reserve {
   background: url(../static/img/index/reserve/Image\ 01.png) no-repeat 0 0;
@@ -60,7 +233,6 @@
 }
 .w-card__brief p span:first-child {
   font-size: 11.5rem;
-  
 }
 .w-card__brief p span:last-child {
   font-size: 7rem;

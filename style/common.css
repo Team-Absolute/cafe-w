@@ -1,6 +1,3 @@
-body {
-}
-
 /* 헤더 */
 .header {
   display: flex;
@@ -212,7 +209,7 @@ body {
   color: currentColor;
 }
 
-svg {
+.footer svg {
   width: 4rem;
   height: 4rem;
   margin: 30px;

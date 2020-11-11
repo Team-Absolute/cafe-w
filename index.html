@@ -459,52 +459,64 @@
     </section>
     <!--추천 강좌 섹션 끝-->
 
-    <section class="review">
-      <h2 class="a11y-hidden" id="reviewHeading">강의 리뷰</h2>
-      <article class="review-article">
-        <h3 class="review-article__heading">무엇이 중요한지 알게된 시간!</h3>
-        <blockquote cite="#">
-          <p>
-            제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다.
-            많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요.
-            무엇이 중요한지 알게되어 많은 도음이 되었습니다.
-          </p>
-          <footer>우정민 <cite>멀티캠퍼스 리뷰란</cite></footer>
-        </blockquote>
-        <span class="rating">
-          <!-- 별모양 svg로 삽입 -->
-          <span class="a11y-hidden">별점 5점 만점에</span>
-          <em>5점</em>
-        </span>
-      </article>
-      <button class="play-btn" type="button" title="다음 리뷰 보기" aria-labelledby="reviewHeading">다음 리뷰</button>
-    </section>
-
-    <section class="popular-lecture">
-      <h2 class="popular-lecture__heading" id="popularLectureHeading">카페 W 인기 강좌</h2>
-      <ol class="popular-lecture__list">
-        <li><a href="#">UI 구조 & 디자인</a><span class="up ir">상승</span></li>
-        <li><a href="#">모바일 웹 UI 제작 실습</a><span class="down ir">하락</span></li>
-        <li><a href="#">UI 인터렉션 주니어</a><span class="stop ir">멈춤</span></li>
-        <li><a href="#">React 프로그래밍</a><span class="up ir">상승</span></li>
-      </ol>
-      <a class="popular-lecture__more" href="#" aria-labelledby="popularLectureHeading" title="카페 W 인기 강좌">더보기</a>
-    </section>
-
-    <section class="brochure">
-      <a href="#">
-        <h2>브로슈어 다운받기</h2>
-      </a>
-      <a href="#" download>
-        <img src="#" alt="카페 W 브로슈어 다운 받기">
-      </a>
-    </section>
+    <div class="section-group">
+      <div class="section-container">
+        <section class="review">
+          <h2 class="a11y-hidden" id="reviewHeading">강의 리뷰</h2>
+          <article class="review-article">
+            <h3 class="review-article__heading">무엇이 중요한지 알게된 시간!</h3>
+            <blockquote class="review-article__brief" cite="#">
+              <p>
+                제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다.
+                많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요.
+                무엇이 중요한지 알게되어 많은 도음이 되었습니다.
+              </p>
+              <div class="rating">
+                <img src="./static/svg/Star 1.svg" alt="">
+                <img src="./static/svg/Star 1.svg" alt="">
+                <img src="./static/svg/Star 1.svg" alt="">
+                <img src="./static/svg/Star 1.svg" alt="">
+                <img src="./static/svg/Star 1.svg" alt="">
+                <!-- <svg>
+                  <use xlink:href="./static/svg/sprite-sheet.svg#Star 1">
+                </svg> -->
+                <span class="a11y-hidden">별점 5점 만점에</span>
+                <em>5점</em>
+              </div>
+              <span class="review-artcle-name">우정민 <cite class="a11y-hidden">멀티캠퍼스 리뷰란</cite></span>
+            </blockquote>
+          </article>
+          <button class="play-btn" type="button" title="다음 리뷰 보기" aria-labelledby="reviewHeading">다음 리뷰</button>
+        </section>
+    
+        <section class="popular-lecture">
+          <h2 class="popular-lecture__heading" id="popularLectureHeading">카페 W 인기 강좌</h2>
+          <ol class="popular-lecture__list">
+            <li><a href="#">UI 구조 & 디자인</a><span class="up ir">상승</span></li>
+            <li><a href="#">모바일 웹 UI 제작 실습</a><span class="down ir">하락</span></li>
+            <li><a href="#">UI 인터렉션 주니어</a><span class="stop ir">멈춤</span></li>
+            <li><a href="#">React 프로그래밍</a><span class="up ir">상승</span></li>
+          </ol>
+          <a class="popular-lecture__more" href="#" aria-labelledby="popularLectureHeading" title="카페 W 인기 강좌"> <img src="/static/svg/Plus button.svg" alt="더보기 아이콘"> 더보기</a>
+        </section>
+    
+        <section class="brochure">
+          <h2><a href="#">브로슈어 <div>다운받기</div></a></h2>
+          <a href="#" download>
+            <img src="./static/svg/Arrow (Stroke).svg" alt="카페 W 브로슈어 다운 받기">
+          </a>
+          <img class="brochure__img" src="./static/img/index/brochure/Image-16.png" alt="카페w 브로셔">
+        </section>
+      </div>
+    </div>
 
     <section class="video">
-      <h2 class="a11y-hidden">카페W 상품 가격 및 할인율 영상</h2>
-      <video controls width="1400">
-        <source src="" type="video/webm">
-      </video>
+      <div class="video-container">
+        <h2 class="a11y-hidden">카페W 상품 가격 및 할인율 영상</h2>
+        <video controls width="100%">
+          <source src="" type="video/webm">
+        </video>
+      </div>
     </section>
 
     <section class="reserve">
