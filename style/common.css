@@ -1,3 +1,183 @@
+body {
+  background-color: blue;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #282725;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  width: 100%;
+  border: 1px solid rgba(255, 252, 249, 0.15);
+  position: absolute;
+  top: 82px;
+}
+
+.header-container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.member {
+  order: -1;
+}
+
+.member__menu {
+  display: flex;
+  font-size: 1.6rem;
+}
+
+.member__menu li:first-child {
+  margin-left: 119px;
+}
+
+.member__menu li:last-child {
+  margin-left: 30px;
+}
+
+.search__form button {
+  background-color: transparent;
+  color: transparent;
+  border: 0;
+}
+
+.search__btn svg {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  margin-right: 129px;
+}
+
+.search__form input {
+  background-color: transparent;
+  border: 0;
+}
+
+/* 헤더 모바일 */
+@media all and (max-width:1399px) {
+  .navigation {
+    display: none;
+  }
+}
+
+/* 네비게이션 */
+.navigation {
+  padding: 47px 119px 0 119px;
+  color: #FFFCF9;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 52px;
+}
+
+.navigation__main-item {
+  font-size: 2rem;
+}
+
+.navigation__sub-list li a {
+  font-size: 1.5rem;
+}
+
+.navigation__sub-list li {
+  margin-bottom: 7px;
+}
+
+.navigation__sub-list li:first-child {
+  margin-top: 17px;
+}
+
+/* 메인-추천 음료 */
+.recommend-beverage {
+  background-color: #F3D6B0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.recommend-beverage__title {
+  text-align: center;
+  width: 350px;
+
+}
+
+.recommend-beverage__title p:last-child {
+  width: 350px;
+  margin-left: 126px;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 100;
+}
+
+.recommend-beverage__subject[lang='en'] {
+  font-size: 4rem;
+  margin: 83px 0 0 126px;
+  color: #A37356;
+  width: 350px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.recommend-beverage__subject span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommend-beverage__subject span::before {
+  content: "";
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  background-color: #A37356;
+  margin-right: 5px;
+}
+
+.recommend-beverage__subject span::after {
+  content: "";
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  background-color: #A37356;
+  margin-left: 5px;
+}
+
+.recommend-beverage__subject em {
+  color: #E27762;
+  font-size: 9rem;
+  font-weight: 700;
+}
+
+.recommend-beverage__list img {
+  width: 238px;
+  height: auto;
+}
+
+.recommend-beverage__list [lang="en"] {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #412311;
+}
+
+.recommend-beverage__list p {
+  font-size: 2.1rem;
+  color: rgba(95, 76, 76, 0.9);
+}
+
 /* 푸터 영역 */
 
 .footer {
@@ -9,6 +189,7 @@
   font-size: 1.2rem;
   padding: 30px 0;
 }
+
 .about-us {
   display: flex;
   flex-wrap: row wrap;
@@ -18,30 +199,37 @@
   border-bottom: 1px solid rgba(255, 252, 249, 0.6);
   padding-bottom: 30px;
 }
+
 .about-us li {
   margin: 0 5px;
 }
+
 .about-us a {
   color: rgba(255, 252, 249, 0.6);
   padding: 1em;
 }
+
 .about-us a:visited {
   color: currentColor;
 }
+
 svg {
   width: 4rem;
   height: 4rem;
   margin: 30px;
 }
+
 .footer address {
   text-align: center;
   line-height: 1.5em;
 }
+
 address span {
   padding-left: 1em;
   padding-right: 1em;
 }
-.line{
+
+.line {
   display: block;
 }
 
@@ -50,10 +238,6 @@ address span {
   margin-top: 30px;
 }
 
-@media all and (max-width: 1339px) {
+@media all and (max-width: 1339px) {}
 
-}
-
-@media all and (min-width: 1400px) {
-
-}
+@media all and (min-width: 1400px) {}
