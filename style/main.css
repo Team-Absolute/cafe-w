@@ -1,3 +1,113 @@
+/* section.reserve */
+.reserve {
+  background: url(../static/img/index/reserve/Image\ 01.png) no-repeat 0 0;
+  background-size: cover;
+}
+.reserve-container {
+  width: 1400px;
+  margin: 0 auto;
+  color: #A37356;
+  padding: 90px 120px 200px;
+  background: url(../static/svg/Star\ Symbol\ \(1\).svg) no-repeat 0 50%;
+}
+.reserve__heading {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.reserve__brief {
+  font-size: 1.6rem
+}
+.reserve__brief [lang="en"] {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.reserve__brief span {
+  display: block;
+}
+.reserve__more {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 25px;
+  border: 1px solid currentColor;
+}
+
+
+/* section.w-card */
+.w-card {
+  width: 100%;
+  background: url(../static/img/index/w-card/Photobg.png) no-repeat 0 0;
+  background-size: cover;
+  position: relative;
+}
+.w-card-container {
+  width: 1400;
+  margin: 0 auto;
+  color: white;
+  padding: 30px;
+}
+.w-card__brief {
+  width: 35%;
+}
+.w-card__brief p {
+  text-align: right;
+  font-size: 15.5rem;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+.w-card__brief p span{
+  display: block;
+}
+.w-card__brief p span:first-child {
+  font-size: 11.5rem;
+  
+}
+.w-card__brief p span:last-child {
+  font-size: 7rem;
+}
+.w-card__brief pre {
+  width: 100%;
+  text-align: right;
+  margin-top: 30px;
+}
+.brief__heading {
+  font-size: 2rem;
+}
+.brief__brief {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.w-card__more {
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 11px 25px;
+  border: 1px solid currentColor;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 25%;
+}
+.w-card__img {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.w-card__img li {
+  padding: 5px;
+  background-color: white;
+}
+.w-card__img li:nth-child(1) {
+  transform: rotate(-30deg) translateX(50px) translateY(50px);
+}
+.w-card__img li:nth-child(2) {
+  transform: rotate(5deg) translateY(-50px);
+}
+.w-card__img li:nth-child(3) {
+  transform: rotate(30deg) translateX(-50px) translateY(100px);
+}
+
+
 /* section.lab */
 .lab {
   width: 1400px;
