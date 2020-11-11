@@ -20,3 +20,11 @@ a {
 a:visited {
   color: currentColor;
 }
+
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}

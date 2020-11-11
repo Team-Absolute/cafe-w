@@ -487,39 +487,43 @@
   
     <section class="video">
       <h2 class="a11y-hidden">카페W 상품 가격 및 할인율 영상</h2>
-      <video controls width="960">
+      <video controls width="1400">
         <source src="" type="video/webm">
       </video>
     </section>
   
     <section class="reserve">
-      <h2 class="reserve__heading" id="reserveHeading">CAFE W . RESERVE</h2>
-      <p class="reserve__brief">
-        <span lang="en">A DELICATE FRAGRANCE</span>
-        <span>입 안 가득 퍼지는 산뜻하고 따뜻한 봄의 향기</span>
-      </p>
-      <a href="#" class="reserve__more" title="예약 자세히 보기" aria-labelledby="reserveHeading">자세히 보기</a>
+      <div class="reserve-container">
+        <h2 class="reserve__heading" id="reserveHeading">CAFE W . RESERVE</h2>
+        <p class="reserve__brief">
+          <span lang="en">A DELICATE FRAGRANCE</span>
+          <span>입 안 가득 퍼지는 산뜻하고 따뜻한 봄의 향기</span>
+        </p>
+        <a href="#" class="reserve__more" title="예약 자세히 보기" aria-labelledby="reserveHeading">자세히 보기</a>
+      </div>
     </section>
 
     <section class="w-card">
-      <h2 class="w-card__heading" id="wCardHeading">CAFE W card</h2>
+      <div class="w-card-container">
+        <h2 class="w-card__heading a11y-hidden" id="wCardHeading">CAFE W card</h2>
       <div class="w-card__brief">
-        <p lang="en">PICK YOUR <span>FAVORITE</span></p>
-        <pre>다양한 메뉴를
+        <p lang="en">PICK<span>YOUR</span> <span>FAVORITE</span></p>
+        <pre class="brief__heading">다양한 메뉴를
 카페 W에서 즐겨보세요</pre>
-        <pre>카페 W만의 특별함을 경험할 수 있는 최상의 선택 음료
+        <pre class="brief__brief">카페 W만의 특별함을 경험할 수 있는 최상의 선택 음료
 카페 W 커피와 완벽한 어울림을 자랑하는 푸드
 사용한 시도와 디자인으로 가치를 더하는 상품
 소중한 사람에게 마음을 전하는 가장 좋은 방법. 카페 W 카드</pre>
       </div>
       <ul class="w-card__img">
-        <li><img src="./img/section-favorite/Photo 01.svg" alt="w카드, 라떼 아트 제작 모습"></li>
-        <li><img src="./img/section-favorite/Photo 02.svg" alt="w카드, 하트가 그려진 라떼"></li>
-        <li><img src="./img/section-favorite/Photo 03.svg" alt="w카드, 커피 타임 이미지 컷"></li>
+        <li><img src="./static/img/index/w-card/Photo 01.png" alt="w카드, 라떼 아트 제작 모습"></li>
+        <li><img src="./static/img/index/w-card/Photo 02.png" alt="w카드, 하트가 그려진 라떼"></li>
+        <li><img src="./static/img/index/w-card/Photo 03.png" alt="w카드, 커피 타임 이미지 컷"></li>
       </ul>
       <!-- 이미지 목록으로 묶음. 별다른 의미는 없는 듯? 후에 이미지가 추가 됐을 때, 목록에 추가 되는 개념.
          이미지가 겹쳐져 보이는 시안인데, 호버된 이미지를 앞으로 보이게 해도 괜찮을 듯. z-index -->
       <a class="w-card__more a-button" href="#" aria-labelledby="wCardHeading" title="W 카드 자세히 보기">자세히 보기</a>
+      </div>
     </section>
 
     <section class="lab">
