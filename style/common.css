@@ -1,3 +1,75 @@
-.header{
-  background-color: red;
+body {
+  background-color: yellow;
+}
+
+/* 헤더 */
+.header-container {
+  background-color: #282725;
+  color: #FFFCF9;
+  /* position: relative; */
+  width: 992px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 252, 249, 0.15);
+}
+
+
+.header__heading {
+  /* position: absolute; */
+  background-color: #fff;
+  /* top: 22px;
+  left: 50%; */
+  /* transform: translate(-50%); */
+  /* z-index: 10; */
+}
+
+.member {
+  order: -1;
+}
+
+.member__menu {
+  /* margin-top: 32px; */
+  display: flex;
+  font-size: 1.6rem;
+}
+
+.member__menu li:first-child {
+  margin-left: 119px;
+}
+
+.member__menu li:last-child {
+  margin-left: 30px;
+}
+
+.search {}
+
+
+/* 네비게이션 */
+.navigation {
+  padding: 47px 119px 0 119px;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__main-item {
+  font-size: 2rem;
+}
+
+.navigation__sub-list li a {
+  color: #FFFCF9;
+  font-size: 1.5rem;
+}
+
+.navigation__sub-list li {
+  margin-bottom: 7px;
+}
+
+.navigation__sub-list li:first-child {
+  margin-top: 17px;
 }

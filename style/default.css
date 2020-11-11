@@ -1,12 +1,13 @@
 .a11y-hidden,
 legend {
-  overflow: hidden;
-  position: absolute !important;
-  clip: rect(0, 0, 0, 0);
-  clip-path: polygon(0 0, 0 0, 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    clip-path: polygon(0 0, 0 0, 0 0);
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
 }
 .skip-nav a {
   position:absolute;
@@ -20,4 +21,28 @@ legend {
   padding: 0;
   text-align: center;
   z-index: 10;
+}
+
+html {
+  font-size: 10px;
+  font-weight: 400;
+  color: #181818;
+}
+
+body,
+body *,
+body::before,
+body::after,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+
 }
