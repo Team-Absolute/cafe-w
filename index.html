@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
@@ -11,28 +11,34 @@
 </head>
 
 <body>
-  <span><a href="#">본문 바로가기</a></span>
+  <span class="skip-nav"><a href="#">본문 바로가기</a></span>
   <!-- body 맨 위에 본문 바로가기 -->
+
   <header class="header">
-    <h1 class="header__heading"><a href="#"><img src="" alt="CAFE W"></a></h1>
-    <section class="member">
-      <h2 class="a11y-hidden">로그인 및 회원 가입</h2>
-      <ul class="member__menu">
-        <li><a href="#">Sign In</a></li>
-        <li><a href="#">Sign Up</a></li>
-      </ul>
-    </section>
-    <section class="search">
-      <h2 class="a11y-hidden">검색</h2>
-      <form class="search__form" action="#" method="GET">
-        <fieldset>
-          <legend class="a11y-hidden">검색 폼</legend>
-          <input type="search" name="search" class="search__input" id="searchInput">
-          <label for="searchInput">검색어를 입력하세요</label>
-          <button type="submit" class="search__btn"><span class="ir"></span>검색</button>
-        </fieldset>
-      </form>
-    </section>
+    <div class="header-container">
+      <h1 class="header__heading"><a href="#"><img src="./static/svg/Cafe W (Horizontal, Dark).svg" alt="CAFE W"></a>
+      </h1>
+      <section class="member">
+        <h2 class="a11y-hidden">로그인 및 회원 가입</h2>
+        <ul class="member__menu">
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </section>
+      <section class="search">
+        <h2 class="a11y-hidden">검색</h2>
+        <form class="search__form" action="#" method="GET">
+          <fieldset>
+            <legend class="a11y-hidden">검색 폼</legend>
+            <input type="search" name="search" class="search__input" id="searchInput">
+            <label class="a11y-hidden" for="searchInput">검색어를 입력하세요</label>
+            <button type="submit" class="search__btn"><svg>
+                <use xlink:href="./static/svg/sprite-sheet.svg#search">
+              </svg>검색</button>
+          </fieldset>
+        </form>
+      </section>
+    </div>
     <nav class="navigation">
       <h2 class="a11y-hidden">메뉴</h2>
       <ul class="navigation__list">
@@ -42,28 +48,28 @@
             <li><a href="#">에스프레소</a></li>
             <li><a href="#">기타 제조 음료</a></li>
           </ul>
-        </li>  
+        </li>
         <li class="navigation__main-item">Foods
           <ul class="navigation__sub-list">
             <li><a href="#">베이커리</a></li>
             <li><a href="#">케잌</a></li>
             <li><a href="#">샌드위치 & 샐러드</a></li>
           </ul>
-        </li> 
+        </li>
         <li class="navigation__main-item">Products
           <ul class="navigation__sub-list">
             <li><a href="#">머그</a></li>
             <li><a href="#">텀블러</a></li>
             <li><a href="#">커피용품</a></li>
           </ul>
-        </li>  
+        </li>
         <li class="navigation__main-item">Lectures
           <ul class="navigation__sub-list">
             <li><a href="#">UI 구조 & 디자인</a></li>
             <li><a href="#">UI 인터렉션 주니어</a></li>
             <li><a href="#">리엑트 프로그래밍</a></li>
           </ul>
-        </li>  
+        </li>
         <li class="navigation__main-item">Customer Service
           <ul class="navigation__sub-list">
             <li><a href="#">공지사항</a></li>
@@ -74,61 +80,64 @@
       </ul>
     </nav>
   </header>
+  </div>
 
   <main>
 
     <section class="recommend-beverage">
-        <h2 class="a11y-hidden">Cafe W의 추천메뉴</h2>
-        <p lang="en" class="recommend-beverage__subject">Spring is a cup
+      <h2 class="a11y-hidden">Cafe W의 추천메뉴</h2>
+      <div class="recommend-beverage__title">
+        <p lang="en" class="recommend-beverage__subject">SPRING IS A CUP
           <span>of</span>
           <!-- css 참조: https://stackoverflow.com/questions/23584120/line-before-and-after-title-over-image-->
           <em>CHOUX CREAM</em>
         </p>
         <p class="recommend-beverage__desc">봄이 왔다 커피가 설렌다</p>
-        <ul class="recommend-beverage__list">
-          <li>
-            <figure>
+      </div>
+      <ul class="recommend-beverage__list">
+        <li>
+          <figure>
+            <a href="#">
+              <img src="./static/img/index/recommend-beverage/Beverage-01.png" alt="딸기 레이어 슈 크림 프라푸치노" aria-labelledby="beverageOne">
+            </a>
+            <figcaption id="beverageOne">
               <a href="#">
-                <img src="" alt="" aria-labelledby="beverageOne">
+                <p lang="en">Strawberry Layer Choux Cream Frappucino</p>
+                <p>딸기 레이어 슈 크림 프라푸치노</p>
               </a>
-              <figcaption id="beverageOne">
-                <a href="#">
-                  <p lang="en">Strawberry Layer Choux Cream Frappucino</p>
-                  <p>딸기 레이어 슈 크림 프라푸치노</p>
-                </a>
-              </figcaption>
-            </figure> 
-          </li>
-          <li>
-            <figure>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <a href="#">
+              <img src="./static/img/index/recommend-beverage/Beverage-02.png" alt="슈 크림 라떼" aria-labelledby="beverageTwo">
+            </a>
+            <figcaption id="beverageTwo">
               <a href="#">
-                <img src="" alt="" aria-labelledby="beverageTwo">
+                <p lang="en">Choux Cream Latte</p>
+                <p>슈 크림 라떼</p>
               </a>
-              <figcaption id="beverageTwo">
-                <a href="#">
-                  <p lang="en">Choux Cream Latte</p>
-                  <p>슈 크림 라떼</p>
-                </a>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <a href="#">
+              <img src="./static/img/index/recommend-beverage/Beverage-03.png" alt="스프링 피치 그린 티" aria-labelledby="beverageThree">
+            </a>
+            <figcaption id="beverageThree">
               <a href="#">
-                <img src="" alt="" aria-labelledby="beverageThree">
+                <p lang="en">Spring Peach Green Tea</p>
+                <p>스프링 피치 그린 티</p>
               </a>
-              <figcaption id="beverageThree">
-                <a href="#">
-                  <p lang="en">Spring Peach Green Tea</p>
-                  <p>스프링 피치 그린 티</p>
-                </a>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-        <a href="#" class="see-all a-button">자세히 보기</a>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+      <a href="#" class="see-all a-button">자세히 보기</a>
     </section>
- 
+
     <section class="recommend-lecture">
       <h2 class="a11y-hidden">Cafe W의 추천 강좌</h2>
       <section class="multicampus-lecture">
@@ -142,11 +151,12 @@
             <!--미리 보기 부분-->
             <dl>
               <dt id="multiCampusLectureItem1">GIT & HTML/CSS</dt>
-              <dd>입문자를 위한 GIT과 HTML&CSS</dd>          
+              <dd>입문자를 위한 GIT과 HTML&CSS</dd>
             </dl>
-            <button class="more-button" aria-labelledby="multiCampusLectureItem1" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>  
+            <button class="more-button" aria-labelledby="multiCampusLectureItem1" aria-haspopup="dialog"
+              aria-pressed="false">강의 정보</button>
             <!--숨겨진 모달 창-->
-            <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="multiItemDialog1"> 
+            <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="multiItemDialog1">
               <h4 id="multiItemDialog1" lang="en">GIT & HTML/CSS</h4>
               <p>입문자를 위한 GIT과 HTML&CSS</p>
               <span class="rating">
@@ -158,7 +168,7 @@
                 <caption class="a11y-hidden">강의 세부 정보표</caption>
                 <tbody>
                   <tr>
-                    <th scope="row">학습시간</th> 
+                    <th scope="row">학습시간</th>
                     <td>09:00 ~ 17:00 (28시간)</td>
                     <th scope="row">난이도</th>
                     <td>초급</td>
@@ -185,16 +195,17 @@
                 <span class="ir"></span>
               </button>
             </div>
-          </li>    
+          </li>
           <li class="multicampus-lecture__item">
-              <!--미리 보기 부분-->
+            <!--미리 보기 부분-->
             <dl>
               <dt id="multiCampusLectureItem2">Responsive Web Design Strategies</dt>
-              <dd>반응형 웹디자인 전략</dd>          
+              <dd>반응형 웹디자인 전략</dd>
             </dl>
-            <button class="more-button" aria-labelledby="multiCampusLectureItem2" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>  
+            <button class="more-button" aria-labelledby="multiCampusLectureItem2" aria-haspopup="dialog"
+              aria-pressed="false">강의 정보</button>
             <!--숨겨진 모달 창-->
-            <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="multiItemDialog2"> 
+            <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="multiItemDialog2">
               <h4 id="multiItemDialog2" lang="en">Responsive Web Design Strategies</h4>
               <p>반응형 웹디자인 전략</p>
               <span class="rating">
@@ -206,7 +217,7 @@
                 <caption class="a11y-hidden">강의 세부 정보표</caption>
                 <tbody>
                   <tr>
-                    <th scope="row">학습시간</th> 
+                    <th scope="row">학습시간</th>
                     <td>09:00 ~ 17:00 (28시간)</td>
                     <th scope="row">난이도</th>
                     <td>초급</td>
@@ -233,7 +244,7 @@
                 <span class="ir"></span>
               </button>
             </div>
-          </li>  
+          </li>
         </ul>
         <div class="controls">
           <button class="controls__btn-pre" title="멀티캠퍼스 이전 강좌 정보 보기" aria-labelledby="multiHeading"></button>
@@ -263,186 +274,190 @@
       <!-- 멀티 캠퍼스 섹션 끝-->
       <!-- 이듬 섹션 시작 -->
       <section class="edum-lecture">
-          <h3 class="edum-lecture__heading" id="edumHeading">
-            <a href="#" role="button">
-              <strong>이듬 블렌디드 러닝</strong>추천 강좌
-            </a>
-          </h3>
-          <ul class="edum-lecture__list">
-            <li class="edum-lecture__item">
-              <!--미리 보기 부분-->
-              <dl>
-                <dt id="edumLectureItem1">UI Structure & Design Course</dt>
-                <dd>UI 구조 디자인 과정</dd>         
-              </dl>
-              <button class="more-button" aria-labelledby="edumLectureItem1" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>   
-              <!--숨겨진 모달 창-->
-              <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="edumItemDialog1"> 
-                <h4 id="edumItemDialog1" lang="en">UI Structure $ Design Course</h4>
-                <p>UI 구조 디자인 과정</p>
-                <span class="lecture-rating">
-                  <!--SVG 삽입-->
-                  <span class="a11y-hidden">5점만점에</span>
-                  <b>4점</b>
-                </span>
-                <table>
-                  <caption class="a11y-hidden">강의 세부 정보 표</caption>
-                  <tbody>
-                    <tr>
-                      <th scope="row">학습시간</th> 
-                      <td>09:00 ~ 17:00 (28시간)</td>
-                      <th scope="row">난이도</th>
-                      <td>초급</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">교육비 지원</th>
-                      <td>고용보험 비환급</td>
-                      <th scope="row">평가항목</th>
-                      <td>출석률 100%</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">수료 기준</th>
-                      <td>총점 80점 이상시 수료</td>
-                      <th scope="row">정원</th>
-                      <td>24명</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">교재정보</th>
-                      <td colspan="3">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <button type="button" class="close-btn button" title="닫기" aria-labelledby="edumItemDialog1">
-                  <span class="ir"></span>
-                </button>
-              </div>
+        <h3 class="edum-lecture__heading" id="edumHeading">
+          <a href="#" role="button">
+            <strong>이듬 블렌디드 러닝</strong>추천 강좌
+          </a>
+        </h3>
+        <ul class="edum-lecture__list">
+          <li class="edum-lecture__item">
+            <!--미리 보기 부분-->
+            <dl>
+              <dt id="edumLectureItem1">UI Structure & Design Course</dt>
+              <dd>UI 구조 디자인 과정</dd>
+            </dl>
+            <button class="more-button" aria-labelledby="edumLectureItem1" aria-haspopup="dialog"
+              aria-pressed="false">강의 정보</button>
+            <!--숨겨진 모달 창-->
+            <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="edumItemDialog1">
+              <h4 id="edumItemDialog1" lang="en">UI Structure $ Design Course</h4>
+              <p>UI 구조 디자인 과정</p>
+              <span class="lecture-rating">
+                <!--SVG 삽입-->
+                <span class="a11y-hidden">5점만점에</span>
+                <b>4점</b>
+              </span>
+              <table>
+                <caption class="a11y-hidden">강의 세부 정보 표</caption>
+                <tbody>
+                  <tr>
+                    <th scope="row">학습시간</th>
+                    <td>09:00 ~ 17:00 (28시간)</td>
+                    <th scope="row">난이도</th>
+                    <td>초급</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">교육비 지원</th>
+                    <td>고용보험 비환급</td>
+                    <th scope="row">평가항목</th>
+                    <td>출석률 100%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">수료 기준</th>
+                    <td>총점 80점 이상시 수료</td>
+                    <th scope="row">정원</th>
+                    <td>24명</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">교재정보</th>
+                    <td colspan="3">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="close-btn button" title="닫기" aria-labelledby="edumItemDialog1">
+                <span class="ir"></span>
+              </button>
+            </div>
+          </li>
+          <!--이듬 두번째 강의-->
+          <li class="edum-lecture__item">
+            <!--미리 보기 부분-->
+            <dl>
+              <dt id="edumLectureItem2">UI Interaction & Junior Course</dt>
+              <dd>UI 인터렉션 주니어 과정</dd>
+            </dl>
+            <button class="more-button" aria-labelledby="edumLectureItem2" aria-haspopup="dialog"
+              aria-pressed="false">강의 정보</button>
+            <!--숨겨진 모달 창-->
+            <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="edumItemDialog2">
+              <h4 id="edumItemDialog2" lang="en">UI Interaction & Junior Course</h4>
+              <p>UI 인터렉션 주니어 과정</p>
+              <span class="lecture-rating">
+                <!--SVG 삽입-->
+                <span class="a11y-hidden">5점만점에</span>
+                <b>4점</b>
+              </span>
+              <table>
+                <caption class="a11y-hidden">강의 세부 정보 표</caption>
+                <tbody>
+                  <tr>
+                    <th scope="row">학습시간</th>
+                    <td>09:00 ~ 17:00 (28시간)</td>
+                    <th scope="row">난이도</th>
+                    <td>초급</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">교육비 지원</th>
+                    <td>고용보험 비환급</td>
+                    <th scope="row">평가항목</th>
+                    <td>출석률 100%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">수료 기준</th>
+                    <td>총점 80점 이상시 수료</td>
+                    <th scope="row">정원</th>
+                    <td>24명</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">교재정보</th>
+                    <td colspan="3">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="close-btn button" title="닫기" aria-labelledby="edumItemDialog2">
+                <span class="ir"></span>
+              </button>
+            </div>
+          </li>
+          <!--이듬 세번째 강의-->
+          <li class="edum-lecture__item">
+            <!--미리 보기 부분-->
+            <dl>
+              <dt id="edumLectureItem3">React Course</dt>
+              <dd>React 프로그래밍 과정</dd>
+            </dl>
+            <button class="more-button" aria-labelledby="edumLectureItem3" aria-haspopup="dialog"
+              aria-pressed="false">강의 정보</button>
+            <!--숨겨진 모달 창-->
+            <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="edumItemDialog3">
+              <h4 id="edumItemDialog3" lang="en">React Course</h4>
+              <p>React 프로그래밍 과정</p>
+              <span class="lecture-rating">
+                <!--SVG 삽입-->
+                <span class="a11y-hidden">5점만점에</span>
+                <b>4점</b>
+              </span>
+              <table>
+                <caption class="a11y-hidden">강의 세부 정보 표</caption>
+                <tbody>
+                  <tr>
+                    <th scope="row">학습시간</th>
+                    <td>09:00 ~ 17:00 (28시간)</td>
+                    <th scope="row">난이도</th>
+                    <td>초급</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">교육비 지원</th>
+                    <td>고용보험 비환급</td>
+                    <th scope="row">평가항목</th>
+                    <td>출석률 100%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">수료 기준</th>
+                    <td>총점 80점 이상시 수료</td>
+                    <th scope="row">정원</th>
+                    <td>24명</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">교재정보</th>
+                    <td colspan="3">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="close-btn button" title="닫기" aria-labelledby="edumItemDialog3">
+                <span class="ir"></span>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="controls">
+          <button class="controls__btn-pre" title="이듬 이전 강좌 정보 보기" aria-labelledby="edumHeading"></button>
+          <button class="controls__btn-next" title="이듬 다음 강좌 정보 보기" aria-labelledby="edumHeading"></button>
+        </div>
+        <div class="indicators">
+          <button class="play-btn" type="button" aria-label="자동재생 정지" title="자동재생 정지"></button>
+          <ul class="indicators__list">
+            <li class="indicators__item">
+              <button type="button" aria-label="첫번째 슬라이드" title="첫번째 슬라이드">
+                <span class="ir"></span>
+              </button>
             </li>
-            <!--이듬 두번째 강의-->
-            <li class="edum-lecture__item">
-                <!--미리 보기 부분-->
-              <dl>
-                <dt id="edumLectureItem2">UI Interaction & Junior Course</dt>
-                <dd>UI 인터렉션 주니어 과정</dd>         
-              </dl>
-              <button class="more-button" aria-labelledby="edumLectureItem2" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>   
-              <!--숨겨진 모달 창-->
-              <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="edumItemDialog2"> 
-                <h4 id="edumItemDialog2" lang="en">UI Interaction & Junior Course</h4>
-                <p>UI 인터렉션 주니어 과정</p>
-                <span class="lecture-rating">
-                  <!--SVG 삽입-->
-                  <span class="a11y-hidden">5점만점에</span>
-                  <b>4점</b>
-                </span>
-                <table>
-                  <caption class="a11y-hidden">강의 세부 정보 표</caption>
-                  <tbody>
-                    <tr>
-                      <th scope="row">학습시간</th> 
-                      <td>09:00 ~ 17:00 (28시간)</td>
-                      <th scope="row">난이도</th>
-                      <td>초급</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">교육비 지원</th>
-                      <td>고용보험 비환급</td>
-                      <th scope="row">평가항목</th>
-                      <td>출석률 100%</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">수료 기준</th>
-                      <td>총점 80점 이상시 수료</td>
-                      <th scope="row">정원</th>
-                      <td>24명</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">교재정보</th>
-                      <td colspan="3">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <button type="button" class="close-btn button" title="닫기" aria-labelledby="edumItemDialog2">
-                  <span class="ir"></span>
-                </button>
-              </div>
-            </li> 
-              <!--이듬 세번째 강의-->
-            <li class="edum-lecture__item">
-                <!--미리 보기 부분-->
-              <dl>
-                <dt id="edumLectureItem3">React Course</dt>
-                <dd>React 프로그래밍 과정</dd>         
-              </dl>
-              <button class="more-button" aria-labelledby="edumLectureItem3" aria-haspopup="dialog" aria-pressed="false">강의 정보</button>   
-              <!--숨겨진 모달 창-->
-              <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="edumItemDialog3"> 
-                <h4 id="edumItemDialog3" lang="en">React Course</h4>
-                <p>React 프로그래밍 과정</p>
-                <span class="lecture-rating">
-                  <!--SVG 삽입-->
-                  <span class="a11y-hidden">5점만점에</span>
-                  <b>4점</b>
-                </span>
-                <table>
-                  <caption class="a11y-hidden">강의 세부 정보 표</caption>
-                  <tbody>
-                    <tr>
-                      <th scope="row">학습시간</th> 
-                      <td>09:00 ~ 17:00 (28시간)</td>
-                      <th scope="row">난이도</th>
-                      <td>초급</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">교육비 지원</th>
-                      <td>고용보험 비환급</td>
-                      <th scope="row">평가항목</th>
-                      <td>출석률 100%</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">수료 기준</th>
-                      <td>총점 80점 이상시 수료</td>
-                      <th scope="row">정원</th>
-                      <td>24명</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">교재정보</th>
-                      <td colspan="3">입문자를 위한 GIT과 HTML&CSS HTML&CSS 웹사이트 개발과 디자인 기초(35,000)</td>
-                    </tr>  
-                  </tbody>
-                </table>
-                <button type="button" class="close-btn button" title="닫기" aria-labelledby="edumItemDialog3">
-                  <span class="ir"></span>
-                </button>
-              </div>
+            <li class="indicators__item">
+              <button type="button" aria-label="두번째 슬라이드" title="두번째 슬라이드">
+                <span class="ir"></span>
+              </button>
+            </li>
+            <li class="indicators__item">
+              <button type="button" aria-label="세번째 슬라이드" title="세번째 슬라이드">
+                <span class="ir"></span>
+              </button>
             </li>
           </ul>
-          <div class="controls">
-              <button class="controls__btn-pre" title="이듬 이전 강좌 정보 보기" aria-labelledby="edumHeading"></button>
-              <button class="controls__btn-next" title="이듬 다음 강좌 정보 보기" aria-labelledby="edumHeading"></button>
-            </div>
-            <div class="indicators">
-              <button class="play-btn" type="button" aria-label="자동재생 정지" title="자동재생 정지"></button>
-              <ul class="indicators__list">
-                <li class="indicators__item">
-                  <button type="button" aria-label="첫번째 슬라이드" title="첫번째 슬라이드">
-                    <span class="ir"></span>
-                  </button>
-                </li>
-                <li class="indicators__item">
-                  <button type="button" aria-label="두번째 슬라이드" title="두번째 슬라이드">
-                    <span class="ir"></span>
-                  </button>
-                </li>
-                <li class="indicators__item">
-                  <button type="button" aria-label="세번째 슬라이드" title="세번째 슬라이드">
-                    <span class="ir"></span>
-                  </button>
-                </li>
-              </ul>
-            </div>
+        </div>
       </section>
       <!-- 이듬 섹션 끝-->
-    </section> <!--추천 강좌 섹션 끝-->
+    </section>
+    <!--추천 강좌 섹션 끝-->
 
     <section class="review">
       <h2 class="a11y-hidden" id="reviewHeading">강의 리뷰</h2>
@@ -450,8 +465,8 @@
         <h3 class="review-article__heading">무엇이 중요한지 알게된 시간!</h3>
         <blockquote cite="#">
           <p>
-            제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다. 
-            많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 
+            제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다.
+            많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요.
             무엇이 중요한지 알게되어 많은 도음이 되었습니다.
           </p>
           <footer>우정민 <cite>멀티캠퍼스 리뷰란</cite></footer>
@@ -464,7 +479,7 @@
       </article>
       <button class="play-btn" type="button" title="다음 리뷰 보기" aria-labelledby="reviewHeading">다음 리뷰</button>
     </section>
-  
+
     <section class="popular-lecture">
       <h2 class="popular-lecture__heading" id="popularLectureHeading">카페 W 인기 강좌</h2>
       <ol class="popular-lecture__list">
@@ -475,7 +490,7 @@
       </ol>
       <a class="popular-lecture__more" href="#" aria-labelledby="popularLectureHeading" title="카페 W 인기 강좌">더보기</a>
     </section>
-  
+
     <section class="brochure">
       <a href="#">
         <h2>브로슈어 다운받기</h2>
@@ -484,87 +499,95 @@
         <img src="#" alt="카페 W 브로슈어 다운 받기">
       </a>
     </section>
-  
+
     <section class="video">
       <h2 class="a11y-hidden">카페W 상품 가격 및 할인율 영상</h2>
-      <video controls width="960">
+      <video controls width="1400">
         <source src="" type="video/webm">
       </video>
     </section>
-  
+
     <section class="reserve">
-      <h2 class="reserve__heading" id="reserveHeading">CAFE W . RESERVE</h2>
-      <p class="reserve__brief">
-        <span lang="en">A DELICATE FRAGRANCE</span>
-        <span>입 안 가득 퍼지는 산뜻하고 따뜻한 봄의 향기</span>
-      </p>
-      <a href="#" class="reserve__more" title="예약 자세히 보기" aria-labelledby="reserveHeading">자세히 보기</a>
+      <div class="reserve-container">
+        <h2 class="reserve__heading" id="reserveHeading">CAFE W . RESERVE</h2>
+        <p class="reserve__brief">
+          <span lang="en">A DELICATE FRAGRANCE</span>
+          <span>입 안 가득 퍼지는 산뜻하고 따뜻한 봄의 향기</span>
+        </p>
+        <a href="#" class="reserve__more" title="예약 자세히 보기" aria-labelledby="reserveHeading">자세히 보기</a>
+      </div>
     </section>
 
     <section class="w-card">
-      <h2 class="w-card__heading" id="wCardHeading">CAFE W card</h2>
+      <div class="w-card-container">
+        <h2 class="w-card__heading a11y-hidden" id="wCardHeading">CAFE W card</h2>
       <div class="w-card__brief">
-        <p lang="en">PICK YOUR <span>FAVORITE</span></p>
-        <pre>다양한 메뉴를
+        <p lang="en">PICK<span>YOUR</span> <span>FAVORITE</span></p>
+        <pre class="brief__heading">다양한 메뉴를
 카페 W에서 즐겨보세요</pre>
-        <pre>카페 W만의 특별함을 경험할 수 있는 최상의 선택 음료
+        <pre class="brief__brief">카페 W만의 특별함을 경험할 수 있는 최상의 선택 음료
 카페 W 커피와 완벽한 어울림을 자랑하는 푸드
 사용한 시도와 디자인으로 가치를 더하는 상품
 소중한 사람에게 마음을 전하는 가장 좋은 방법. 카페 W 카드</pre>
       </div>
       <ul class="w-card__img">
-        <li><img src="./img/section-favorite/Photo 01.svg" alt="w카드, 라떼 아트 제작 모습"></li>
-        <li><img src="./img/section-favorite/Photo 02.svg" alt="w카드, 하트가 그려진 라떼"></li>
-        <li><img src="./img/section-favorite/Photo 03.svg" alt="w카드, 커피 타임 이미지 컷"></li>
+        <li><img src="./static/img/index/w-card/Photo 01.png" alt="w카드, 라떼 아트 제작 모습"></li>
+        <li><img src="./static/img/index/w-card/Photo 02.png" alt="w카드, 하트가 그려진 라떼"></li>
+        <li><img src="./static/img/index/w-card/Photo 03.png" alt="w카드, 커피 타임 이미지 컷"></li>
       </ul>
       <!-- 이미지 목록으로 묶음. 별다른 의미는 없는 듯? 후에 이미지가 추가 됐을 때, 목록에 추가 되는 개념.
-         이미지가 겹쳐져 보이는 시안인데, 호버된 이미지를 앞으로 보이게 해도 괜찮을 듯. z-index -->
+           이미지가 겹쳐져 보이는 시안인데, 호버된 이미지를 앞으로 보이게 해도 괜찮을 듯. z-index -->
       <a class="w-card__more a-button" href="#" aria-labelledby="wCardHeading" title="W 카드 자세히 보기">자세히 보기</a>
+      </div>
     </section>
 
     <section class="lab">
       <h2 class="lab__headline">CAFE W <span>COFFEE LAB</span></h2>
       <!-- 제목 그대로 쓰고, 굵기 다른 부분 span -->
-      <p class="lab--brief">최고의 커피를 향한 끊임없는 노력, <em>카페 W 커피연구소</em></p>
+      <p class="lab__brief">최고의 커피를 향한 끊임없는 노력, <em>카페 W 커피연구소</em></p>
       <!-- 문구 p, 중요 문구 em -->
       <ul class="lab__list">
         <li><a href="#">LAB MENU</a></li>
         <li><a href="#">LAB BARISTA</a></li>
       </ul>
       <!-- 목록 처리. 
-        이미지는 백그라운드로,
-        이미지가 겹쳐져 보이는 시안인데, 호버된 이미지를 앞으로 보이게 해도 괜찮을 듯. z-index -->
+          이미지는 백그라운드로,
+          이미지가 겹쳐져 보이는 시안인데, 호버된 이미지를 앞으로 보이게 해도 괜찮을 듯. z-index -->
     </section>
 
     <section class="medal">
       <div class="medal__back">
         <h2 class="medal__heading" id="medalHeading">이듬 블렌디드 러닝</h2>
         <p class="medal__brief">이듬 블렌디드 러닝 과정에서 운영하는 각 과정의 자세한 커리큘럼을 확인하려면 <span>과정 보기</span>를 눌러주세요.</p>
-        <a class="medal__more" aria-labelledby="medalHeading" href="#" >과정 보기</a>
+        <a class="medal__more" aria-labelledby="medalHeading" href="#">과정 보기</a>
       </div>
       <div class="medal__front">
-        <img src="#" alt="카페 W 로고">
+        <img src="./static/img/index/medal/Medal Front.png" alt="카페 W 로고">
       </div>
     </section>
 
     <section class="store">
-      <h2 class="store__heading"><a href="#">매장 찾기</a></h2>
-        <p class="store__brief">카페 W를 가까이에서 경험해보세요. <span>고객님과 가장 가까이 있는 매장을 찾아보세요!</span></p>
+      <div class="store-container">
+        <h2 class="store__heading"><a href="#">매장 찾기</a></h2>
+      <p class="store__brief">카페 W를 가까이에서 경험해보세요. <span>고객님과 가장 가까이 있는 매장을 찾아보세요!</span></p>
       <ul class="store__list">
         <li>차별화된 커피 경험을 누릴 수 있는 <span>리저브 매장</span></li>
         <li>다양한 방법으로 편리하게 즐길 수 있는 <span>드라이브 스루 매장</span></li>
         <li>함께해서 더 따뜻할수 있는 지역사회 소통 공간 <span>커뮤니티 매장</span></li>
       </ul>
-      <div>
-        <img src="./img/section-store/Image 04.svg" alt="커피와 다과가 준비된 테이블">
-        <img src="./img/section-store/Image 14.svg" alt="커피향을 음미하는 여성">
+      <div class="store__img">
+        <img src="./static/img/index/store/Photo Big.png" alt="커피와 다과가 준비된 테이블">
+        <img src="./static/img/index/store/Photo Small.png" alt="커피향을 음미하는 여성">
+      </div>
       </div>
     </section>
 
   </main>
 
   <footer class="footer">
-    <img src="./img/footer/Cafe W (Vertical).svg" alt="CAFE W">
+    <svg>
+      <use xlink:href="./static/svg/sprite-sheet.svg#cafew-vertical-">
+    </svg>
     <ul class="about-us">
       <li><a href="#">개인정보 처리방침</a></li>
       <li><a href="#">멤버스 이용약관</a></li>
@@ -576,12 +599,14 @@
     </ul>
     <address>
       서울시 강남구 테헤란로 10길 18 K&I 타워 카페 W (2F)<span class="divider">|</span>연락처 : <a href="tel:0269512121">02-6951-2121</a>
-      사업자 등록번호 : 107-86-16302<span class="divider">|</span>통신판매업 신고 : 강남 제 002519호<span class="divider">|</span>대표이사 :
-      김데레사
+      <span class="line">사업자 등록번호 : 107-86-16302<span class="divider">|</span>통신판매업 신고 : 강남 제 002519호<span
+          class="divider">|</span>대표이사 :
+        김데레사</span>
     </address>
     <small>
       © 2020 CAFE W COMPANY. ALL rights reserved.
     </small>
   </footer>
 </body>
+
 </html>

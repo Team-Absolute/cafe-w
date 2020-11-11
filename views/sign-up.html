@@ -11,66 +11,71 @@
   <span><a href="#">본문 바로가기</a></span>
   <!-- body 맨 위에 본문 바로가기 -->
   <header class="header">
-    <h1 class="header__heading"><a href="#"><img src="" alt="CAFE W"></a></h1>
-    <section class="member">
-      <h2 class="a11y-hidden">로그인 및 회원 가입</h2>
-      <ul class="member__menu">
-        <li><a href="#">Sign In</a></li>
-        <li><a href="#">Sign Up</a></li>
-      </ul>
-    </section>
-    <section class="search">
-      <h2 class="a11y-hidden">검색</h2>
-      <form class="search__form" action="#" method="GET">
-        <fieldset>
-          <legend class="a11y-hidden">검색 폼</legend>
-          <input type="search" name="search" class="search__input" id="searchInput">
-          <label for="searchInput">검색어를 입력하세요</label>
-          <button type="submit" class="search__btn"><span class="ir"></span>검색</button>
-        </fieldset>
-      </form>
-    </section>
-    <nav class="navigation">
-      <h2 class="a11y-hidden">메뉴</h2>
-      <ul class="navigation__list">
-        <li class="navigation__main-item">Drinks
-          <ul class="navigation__sub-list">
-            <li><a href="#">콜드 브루</a></li>
-            <li><a href="#">에스프레소</a></li>
-            <li><a href="#">기타 제조 음료</a></li>
+      <div class="header-container">
+        <h1 class="header__heading"><a href="#"><img src="../static/svg/Cafe W (Horizontal, Dark).svg" alt="CAFE W"></a>
+        </h1>
+        <section class="member">
+          <h2 class="a11y-hidden">로그인 및 회원 가입</h2>
+          <ul class="member__menu">
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Sign Up</a></li>
           </ul>
-        </li>  
-        <li class="navigation__main-item">Foods
-          <ul class="navigation__sub-list">
-            <li><a href="#">베이커리</a></li>
-            <li><a href="#">케잌</a></li>
-            <li><a href="#">샌드위치 & 샐러드</a></li>
-          </ul>
-        </li> 
-        <li class="navigation__main-item">Products
-          <ul class="navigation__sub-list">
-            <li><a href="#">머그</a></li>
-            <li><a href="#">텀블러</a></li>
-            <li><a href="#">커피용품</a></li>
-          </ul>
-        </li>  
-        <li class="navigation__main-item">Lectures
-          <ul class="navigation__sub-list">
-            <li><a href="#">UI 구조 & 디자인</a></li>
-            <li><a href="#">UI 인터렉션 주니어</a></li>
-            <li><a href="#">리엑트 프로그래밍</a></li>
-          </ul>
-        </li>  
-        <li class="navigation__main-item">Customer Service
-          <ul class="navigation__sub-list">
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">추천 채널</a></li>
-            <li><a href="#">체크 리스트</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        </section>
+        <section class="search">
+          <h2 class="a11y-hidden">검색</h2>
+          <form class="search__form" action="#" method="GET">
+            <fieldset>
+              <legend class="a11y-hidden">검색 폼</legend>
+              <input type="search" name="search" class="search__input" id="searchInput">
+              <label class="a11y-hidden" for="searchInput">검색어를 입력하세요</label>
+              <button type="submit" class="search__btn"><svg>
+                  <use xlink:href="../static/svg/sprite-sheet.svg#search">
+                </svg>검색</button>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+      <nav class="navigation">
+        <h2 class="a11y-hidden">메뉴</h2>
+        <ul class="navigation__list">
+          <li class="navigation__main-item">Drinks
+            <ul class="navigation__sub-list">
+              <li><a href="#">콜드 브루</a></li>
+              <li><a href="#">에스프레소</a></li>
+              <li><a href="#">기타 제조 음료</a></li>
+            </ul>
+          </li>
+          <li class="navigation__main-item">Foods
+            <ul class="navigation__sub-list">
+              <li><a href="#">베이커리</a></li>
+              <li><a href="#">케잌</a></li>
+              <li><a href="#">샌드위치 & 샐러드</a></li>
+            </ul>
+          </li>
+          <li class="navigation__main-item">Products
+            <ul class="navigation__sub-list">
+              <li><a href="#">머그</a></li>
+              <li><a href="#">텀블러</a></li>
+              <li><a href="#">커피용품</a></li>
+            </ul>
+          </li>
+          <li class="navigation__main-item">Lectures
+            <ul class="navigation__sub-list">
+              <li><a href="#">UI 구조 & 디자인</a></li>
+              <li><a href="#">UI 인터렉션 주니어</a></li>
+              <li><a href="#">리엑트 프로그래밍</a></li>
+            </ul>
+          </li>
+          <li class="navigation__main-item">Customer Service
+            <ul class="navigation__sub-list">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">추천 채널</a></li>
+              <li><a href="#">체크 리스트</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
   <main>
     <section class="sign-up user" id="signUp">
       <header class="sign-up__header">
@@ -256,25 +261,28 @@
     </section>
 
   </main>
-  <footer>
-    <img src="./img/footer/Cafe W (Vertical).svg" alt="CAFE W">
-    <ul class="about-us">
-      <li><a href="#">개인정보 처리방침</a></li>
-      <li><a href="#">멤버스 이용약관</a></li>
-      <li><a href="#">가맹 안내</a></li>
-      <li><a href="#">대량 쿠폰판매</a></li>
-      <li><a href="#">채용 안내</a></li>
-      <li><a href="#">고객의 소리</a></li>
-      <li><a href="#">사이트맵</a></li>
-    </ul>
-    <address>
-      서울시 강남구 테헤란로 10길 18 K&I 타워 카페 W (2F)<span class="divider">|</span>연락처 : <a href="tel:0269512121">02-6951-2121</a>
-      사업자 등록번호 : 107-86-16302<span class="divider">|</span>통신판매업 신고 : 강남 제 002519호<span class="divider">|</span>대표이사 :
-      김데레사
-    </address>
-    <small>
-      © 2020 CAFE W COMPANY. ALL rights reserved.
-    </small>
-  </footer>
+  <footer class="footer">
+      <svg>
+        <use xlink:href="../static/svg/sprite-sheet.svg#cafew-vertical-">
+      </svg>
+      <ul class="about-us">
+        <li><a href="#">개인정보 처리방침</a></li>
+        <li><a href="#">멤버스 이용약관</a></li>
+        <li><a href="#">가맹 안내</a></li>
+        <li><a href="#">대량 쿠폰판매</a></li>
+        <li><a href="#">채용 안내</a></li>
+        <li><a href="#">고객의 소리</a></li>
+        <li><a href="#">사이트맵</a></li>
+      </ul>
+      <address>
+        서울시 강남구 테헤란로 10길 18 K&I 타워 카페 W (2F)<span class="divider">|</span>연락처 : <a href="tel:0269512121">02-6951-2121</a>
+        <span class="line">사업자 등록번호 : 107-86-16302<span class="divider">|</span>통신판매업 신고 : 강남 제 002519호<span
+            class="divider">|</span>대표이사 :
+          김데레사</span>
+      </address>
+      <small>
+        © 2020 CAFE W COMPANY. ALL rights reserved.
+      </small>
+    </footer>
 </body>
 </html>
