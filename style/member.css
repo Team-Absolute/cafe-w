@@ -1,0 +1,235 @@
+
+.sign-up{
+  background-color: #FFF;
+  width: 742px;
+  margin: 0 auto;
+  color: #7D6F5D;
+  border: 1px solid #CBC5BE;
+  margin-top: 70px;
+}
+
+.sign-up__header{
+  padding-bottom: 25px;
+  border-bottom: 1px solid #CBC5BE;
+  text-align: center;
+}
+.sign-up__heading{
+  padding-top: 25px;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sign-up__brief{
+  font-size: 1em;
+}
+
+.sign-up__form{
+  padding: 0 152px;
+  margin-bottom: 50px;
+}
+
+.sign-up .label{
+  display: block;
+  line-height: 1.2rem;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.sign-up sup {
+  color: #E27762;
+  margin-left: 2px;
+}
+
+.user [role="alert"] {
+  display: none;
+}
+
+.sign-up input, .sign-up select {
+  border: 1px solid rgba(125,111,93,50%);
+}
+
+.sign-hint {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 6px 0;
+}
+
+.sign-up__id input,
+.sign-up__pwd input,
+.sign-up__pwd-check input,
+.sign-up__name input,
+.sign-up__phone input,
+.sign-up__nick input,
+.sign-up__sex dd,
+.sign-up__birth select
+ {
+  height: 34px;
+  padding: 0 1rem;
+  border-radius: 3px;
+}
+
+.sign-up__id input,
+.sign-up__pwd input,
+.sign-up__pwd-check input,
+.sign-up__name input,
+.sign-up__phone input,
+.sign-up__nick input{
+  width: 100%;
+}
+
+.sign-up__birth select {
+  margin-right: 10px;
+}
+.sign-up__form [name="year"] {
+  width: 30%;
+}
+
+
+.sign-up__id,
+.sign-up__pwd,
+.sign-up_pwd-check,
+.sign-up__name,
+.sign-up__phone,
+.sign-up__policy,
+.sign-up__nick {
+  margin: 25px 0;
+}
+
+.sign-up__name,
+.sign-up__sex {
+  display: inline-block;
+  width: 40%;
+} 
+
+.sign-up__sex {
+  margin-left: 20px;
+}
+.sign-up__sex dd{
+  display: inline-block;
+}
+
+.sign-up__sex input {
+  position: relative;
+  width: 20px;
+  height: 20px;
+
+}
+
+.sign-up__sex input::before {
+  content: "";
+  position: absolute;
+  left: 0;  
+  width: 20px;
+  height: 20px;
+  background: url(../static/svg/radio-off.svg);
+}
+
+.sign-up__sex input:checked::before {
+background-image: url(../static/svg/radio-on.svg)
+}
+
+.sign-up__sex [type="radio"]{
+  vertical-align: sub;
+}
+
+.sign-up__auth dt {
+  width: 100%;
+}
+
+.sign-up__cell, .sign-up__ipin {
+  width: 50%;
+  float: left;
+  background-color: yellow;
+  padding: 13px;
+  text-align: center;
+  height: 230px;
+
+}
+
+.sign-up__cell figcaption, 
+.sign-up__ipin figcaption {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.1; 
+  margin-bottom: 6px;
+}
+
+.sign-up__cell p, 
+.sign-up__ipin p {
+  font-size: 1.2rem;
+  line-height:1.2;
+  margin-bottom: 6px;
+}
+
+.sign-up__auth button {
+  font-size: 1.2rem;
+  width: 73px;
+  height: 27px;
+}
+.sign-up__ipin {
+  background-color: red;
+}
+
+
+
+/*이용 약관*/
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 4px;   
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #7D6F5D;
+}
+::-webkit-scrollbar-track-piece {
+  border-radius: 10px;
+  background-color: rgb(179, 176, 176);
+}
+.policy-container {
+  font-weight: 200;
+  font-size: 1.2rem;
+  background-color: #FFFCF9;
+  padding: 17px;
+  border-radius: 3px;
+  border: 1px solid rgba(125,111,93,30%);
+  margin-bottom: 67px;
+}
+.policy-container p {
+  height: 135px;
+  line-height: 1.5;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 0 15px;
+}
+.sign-up__provision-container {
+  position: relative;
+}
+.sign-up__provision-confirm{
+  position: absolute;
+  right: 0;
+  top :0;
+}
+
+.sign-up__select-field{
+  position: relative;
+}
+/* 마크업 순서상 앞에 배치된 메세지를 선태 필드셋 맨 끝에 배치 */
+.sign-up__select-field .sign-hint {
+  position: absolute;
+  bottom: 17px;
+}
+
+.sign-btn {
+  background-color: #7D6F5D;
+  color: #FFF;
+  font-weight: 700;
+  border-radius: 3px;
+}
+.sign-up__btn {
+  width: 100%;
+  height: 45px;
+  font-size: 1.6rem;  
+}
