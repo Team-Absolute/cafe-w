@@ -32,7 +32,8 @@
             <legend class="a11y-hidden">검색 폼</legend>
             <input type="search" name="search" class="search__input" id="searchInput">
             <label class="a11y-hidden" for="searchInput">검색어를 입력하세요</label>
-            <button type="submit" class="search__btn"><svg>
+            <button type="submit" class="search__btn">
+              <svg>
                 <use xlink:href="./static/svg/sprite-sheet.svg#search">
               </svg>검색</button>
           </fieldset>
@@ -82,6 +83,12 @@
       </nav>
   </header>
   <main>
+    <section class="notice">
+      <h2 class="a11y-hidden" id="noticeHeading">공지사항</h2>
+      <p class="notice__brief"><a href="#">카페 W 영업시간 조정 안내</a></p>
+      <time datetime="2020-02-19" class="notice__date">2020.02.19</time>
+      <button class="notice__btn" type="button" aria-labelledby="noticeHeading">닫기</button>
+    </section>
     <section class="recommend-beverage">
       <div class="position-container">
         <h2 class="a11y-hidden">Cafe W의 추천메뉴</h2>
@@ -501,9 +508,6 @@
                 <img src="./static/svg/Star 1.svg" alt="">
                 <img src="./static/svg/Star 1.svg" alt="">
                 <img src="./static/svg/Star 1.svg" alt="">
-                <!-- <svg>
-                  <use xlink:href="./static/svg/sprite-sheet.svg#Star 1">
-                </svg> -->
                 <span class="a11y-hidden">별점 5점 만점에</span>
                 <em>5점</em>
               </div>
@@ -521,11 +525,11 @@
             <li><a href="#">UI 인터렉션 주니어</a><span class="stop ir">멈춤</span></li>
             <li><a href="#">React 프로그래밍</a><span class="up ir">상승</span></li>
           </ol>
-          <a class="popular-lecture__more" href="#" aria-labelledby="popularLectureHeading" title="카페 W 인기 강좌"> <img src="/static/svg/Plus button.svg" alt="더보기 아이콘"> 더보기</a>
+          <a class="popular-lecture__more" href="#" aria-labelledby="popularLectureHeading" title="카페 W 인기 강좌"> <img src="/static/svg/Plus-button.svg" alt="더보기 아이콘"> 더보기</a>
         </section>
     
         <section class="brochure">
-          <h2><a href="#">브로슈어 <div>다운받기</div></a></h2>
+          <h2><a href="#">브로슈어 <span>다운받기</span></a></h2>
           <a href="#" download>
             <img src="./static/svg/Arrow (Stroke).svg" alt="카페 W 브로슈어 다운 받기">
           </a>
@@ -620,6 +624,7 @@
       </div>
     </section>
 
+    <a href="#" class="go-top" type="button">맨 위로 바로가기</a>
   </main>
 
   <footer class="footer">
