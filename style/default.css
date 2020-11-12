@@ -56,7 +56,7 @@ body *::after {
   box-sizing: border-box;
 }
 
-::-webkit-input-placeholder,  { /* Edge */
+::-webkit-input-placeholder { /* Edge */
   font-size: 1.3rem;
   color: #7D6F5D;
 }
