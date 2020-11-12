@@ -24,10 +24,6 @@
   justify-content: space-between;
 }
 
-.navigation {
-  width: 100%;
-}
-
 .member {
   order: -1;
 }
@@ -52,16 +48,22 @@
   border: 0;
 }
 
+
 .search__btn svg {
   width: 24px;
   height: 24px;
   margin: 0;
-  margin-right: 129px;
+ 
 }
 
-.search__form input {
-  background-color: transparent;
+.search__input {
+  color: #fff;
   border: 0;
+  background-color: transparent;
+  border-bottom: 1px solid currentColor;
+  padding: 5px 0;
+  line-height: 1rem;  
+
 }
 
 /* 헤더 모바일 */
@@ -75,6 +77,8 @@
 .navigation {
   padding: 47px 119px 0 119px;
   color: #FFFCF9;
+  width: 1400px;
+  margin: 0 auto;
 }
 
 .navigation__list {
@@ -100,11 +104,18 @@
 }
 
 /* 메인-추천 음료 */
+.position-container {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+}
+
 .recommend-beverage {
   background-color: #F3D6B0;
   display: flex;
   flex-flow: column nowrap;
   position: relative;
+  text-transform: uppercase;
 }
 
 .recommend-beverage__title {
@@ -129,6 +140,17 @@
   width: 350px;
   letter-spacing: 0.1em;
   text-align: center;
+}
+.recommend-beverage__desc{
+  margin-top:10px;
+}
+.recommend-beverage__desc:after{
+  content:"";
+  display: inline-block;
+  width: 350px;
+  margin-top:20px;
+  text-align: center;
+  border-bottom: 2px solid  #A37356;
 }
 
 .recommend-beverage__subject span {
@@ -176,6 +198,7 @@
 .recommend-beverage__list img {
   width: 238px;
   height: auto;
+  animation: bounce 0.1s ease-in-out alternate infinite;
 }
 
 .recommend-beverage__list li:nth-child(1) {
@@ -200,22 +223,33 @@
 }
 .recommend-beverage__list figcaption{
   position: absolute;
-  left:10px;
+  left:-10px;
   white-space:nowrap ;
 }
 .recommend-beverage__list li:nth-child(2) figcaption{
-  top:-60px;
-  left:50px;
+  top:-80px;
+  left:-10px;
 }
 .recommend-beverage__list li:nth-child(3) figcaption{
-  top:-60px;
-  left:-10px;
+  top:-70px;
+  left:10px;
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(5px);
+  }
 }
 
 .recommend-beverage__list [lang="en"] {
   font-size: 2.8rem;
   font-weight: 700;
   color: #412311;
+  margin-bottom:12px;
 }
 
 .recommend-beverage__list p {
@@ -223,9 +257,14 @@
   color: rgba(95, 76, 76, 0.9);
 }
 
-.see-all {
-  display: flex;
-  background-color: yellow;
+.recommend-beverage .see-all   {
+  position: absolute;
+  bottom:133px;
+  left:245px;
+  border: 2px solid #E27762;
+  padding:10px;
+  color:#E27762 ;
+  font-weight: 700;
 }
 
 /* 푸터 영역 */
