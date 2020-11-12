@@ -96,13 +96,17 @@
           </div>
           
           <div class="sign-in__save">
-            <input class="checkbox" type="checkbox" id="signInFormSave" name="save" checked>
-            <label class="label" for="signInFormSave">아이디 저장</label>
-            <input class="checkbox" type="checkbox" id="signInFormHold" name="hold">
-            <label for="signInFormHold">로그인 상태 유지</label>
+            <div class="save-id-container">
+              <input class="checkbox" type="checkbox" id="signInFormSave" name="save" checked>
+              <label class="label" for="signInFormSave">아이디 저장</label>
+            </div>
+            <div class="save-login-container">
+              <input class="checkbox" type="checkbox" id="signInFormHold" name="hold">
+              <label class="label" for="signInFormHold">로그인 상태 유지</label>
+            </div>
           </div>
-          <p>타 사이트와 비밀번호를 동일하게 사용할 경우 도용의 위험이 있으므로, 사용자 정보 보호를 위해 정기적인 비밀번호 변경을 요청 드립니다.</p>
-          <p>Cafe W 공식 홈페이지는 Internet Explorer 9.0 이상, Chrome, Firefox, Safari, Edge 브라우저에 최적화 되어있습니다.</p>
+          <p class="sign-hint">타 사이트와 비밀번호를 동일하게 사용할 경우 도용의 위험이 있으므로, 사용자 정보 보호를 위해 정기적인 비밀번호 변경을 요청 드립니다.</p>
+          <p class="sign-hint">Cafe W 공식 홈페이지는 Internet Explorer 9.0 이상, Chrome, Firefox, Safari, Edge 브라우저에 최적화 되어있습니다.</p>
           <button type="submit" name="signIn">로그인</button>
         </fieldset>
       </form>

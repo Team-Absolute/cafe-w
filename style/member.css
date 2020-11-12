@@ -327,13 +327,36 @@ background-image: url(../static/svg/radio-on.svg)
   background-color: #FFFCF9;
 }
 
-.sign-in__save{
-  position: relative;
-  background-color: pink;
+.sign-in fieldset {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-.sign-in .checkbox{
-  position: absolute;
+.sign-in__id,
+.sign-in__pwd,
+.sign-in button {
+  order: -1;
+}
+
+.sign-in__save {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.save-id-container,
+.save-login-container {
+  position: relative;
+}
+.save-login-container {
+  width: 50%;
+}
+
+.sign-in__save .label {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .sign-in__navigation {
@@ -364,4 +387,17 @@ background-image: url(../static/svg/radio-on.svg)
   width: 100%;
   height: 45px;
   font-size: 1.6rem;  
+}
+
+ 
+
+
+.sign-in button {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #7D6F5D;
+  color: #FFFCF9;
+  border: none;
+  margin-top: 30px;
+  font-size: 2rem;
 }
