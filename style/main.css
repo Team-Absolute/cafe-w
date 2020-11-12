@@ -365,6 +365,7 @@
 }
 .video-container video {
   width: 960px;
+  z-index:10;
 }
 .video-container:before,
 .video-container:after {

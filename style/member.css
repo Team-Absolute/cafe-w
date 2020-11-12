@@ -259,15 +259,15 @@ background-image: url(../static/svg/radio-on.svg)
   padding: 0 15px;
 }
 
-::-webkit-scrollbar {
+.policy-container ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 4px;   
 }
-::-webkit-scrollbar-thumb {
+.policy-container ::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: #7D6F5D;
 }
-::-webkit-scrollbar-track-piece {
+.policy-container ::-webkit-scrollbar-track-piece {
   border-radius: 4px;
   background-color: #b3b0b0;
 }
@@ -351,8 +351,6 @@ background-image: url(../static/svg/radio-on.svg)
   font-size: 2rem;
   font-weight: 400;
 }
-
-
 
 .sign-btn {
   background-color: #7D6F5D;
