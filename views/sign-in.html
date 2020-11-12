@@ -4,29 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../style/style.css"> 
   <title>Cafe W - 로그인</title>
 </head>
 <body>
   <header class="header">
-    <h1 class="header__heading"><a href="#"><img src="" alt="CAFE W"></a></h1>
-    <section class="member">
-      <h2 class="a11y-hidden">로그인 및 회원 가입</h2>
-      <ul class="member__menu">
-        <li><a href="#">Sign In</a></li>
-        <li><a href="#">Sign Up</a></li>
-      </ul>
-    </section>
-    <section class="search">
-      <h2 class="a11y-hidden">검색</h2>
-      <form class="search__form" action="#" method="GET">
-        <fieldset>
-          <legend class="a11y-hidden">검색 폼</legend>
-          <input type="search" name="search" class="search__input" id="searchInput">
-          <label for="searchInput">검색어를 입력하세요</label>
-          <button type="submit" class="search__btn"><span class="ir"></span>검색</button>
-        </fieldset>
-      </form>
-    </section>
+    <div class="header-container">
+      <h1 class="header__heading"><a href="#"><img src="../static/svg/Cafe W (Horizontal, Dark).svg" alt="CAFE W"></a>
+      </h1>
+      <section class="member">
+        <h2 class="a11y-hidden">로그인 및 회원 가입</h2>
+        <ul class="member__menu">
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </section>
+      <section class="search">
+        <h2 class="a11y-hidden">검색</h2>
+        <form class="search__form" action="#" method="GET">
+          <fieldset>
+            <legend class="a11y-hidden">검색 폼</legend>
+            <input type="search" name="search" class="search__input" id="searchInput">
+            <label class="a11y-hidden" for="searchInput">검색어를 입력하세요</label>
+            <button type="submit" class="search__btn"><svg>
+                <use xlink:href="../static/svg/sprite-sheet.svg#search">
+              </svg>검색</button>
+          </fieldset>
+        </form>
+      </section>
+    </div>
     <nav class="navigation">
       <h2 class="a11y-hidden">메뉴</h2>
       <ul class="navigation__list">
@@ -36,28 +42,28 @@
             <li><a href="#">에스프레소</a></li>
             <li><a href="#">기타 제조 음료</a></li>
           </ul>
-        </li>  
+        </li>
         <li class="navigation__main-item">Foods
           <ul class="navigation__sub-list">
             <li><a href="#">베이커리</a></li>
             <li><a href="#">케잌</a></li>
             <li><a href="#">샌드위치 & 샐러드</a></li>
           </ul>
-        </li> 
+        </li>
         <li class="navigation__main-item">Products
           <ul class="navigation__sub-list">
             <li><a href="#">머그</a></li>
             <li><a href="#">텀블러</a></li>
             <li><a href="#">커피용품</a></li>
           </ul>
-        </li>  
+        </li>
         <li class="navigation__main-item">Lectures
           <ul class="navigation__sub-list">
             <li><a href="#">UI 구조 & 디자인</a></li>
             <li><a href="#">UI 인터렉션 주니어</a></li>
             <li><a href="#">리엑트 프로그래밍</a></li>
           </ul>
-        </li>  
+        </li>
         <li class="navigation__main-item">Customer Service
           <ul class="navigation__sub-list">
             <li><a href="#">공지사항</a></li>
@@ -69,54 +75,52 @@
     </nav>
   </header>
   <main>
-    <section class="sign-in" id="signIn">
-      <header class="sign-in__header">
-        <h2 class="sign-in__heading">SIGN IN</h2>
-        <p class="sign-in__brief">환영합니다. 이 곳은 Cafe W 입니다.</p>
+    <section class="sign-in user">
+      <header class="user__header">
+        <h2 class="user__heading">SIGN IN</h2>
+        <p class="user__brief">환영합니다. 이 곳은 Cafe W 입니다.</p>
       </header>
-      <form  class="sign-in__form" action="#" method="POST">
+      <form class="user__form sign-in__form" action="#" method="POST">
         <fieldset>
           <legend class="a11y-hidden">로그인</legend>
-
-          <div class="sign-in__id">
-            <label for="signInFormId">아이디</label>
+          <div class="user__id sign-in__id">
+            <label class="label" for="signInFormId">아이디<sup><span class="a11y-hidden">필수 입력</span>*</sup></label>
             <input type="email" id="signInFormId" name="id" required placeholder="사용자 계정을 입력합니다.">
             <span role="alert" >아이디는 이메일 형식을 갖춰야 합니다.</span>
           </div>
           
-          <div class="sign-in__pwd">
-            <label for="signInFormPwd">패스워드</label>
+          <div class="user__pwd sign-in__pwd">
+            <label class="label" for="signInFormPwd">패스워드<sup><span class="a11y-hidden">필수 입력</span>*</sup></label>
             <input type="password" id="signInFormPwd" name="pwd" required placeholder="사용자 계정 비밀번호를 입력합니다.">
             <span role="alert" >비밀번호는 8자 이상입니다.</span>
           </div>
-
+          
           <div class="sign-in__save">
-            <input type="checkbox" id="signInFormSave" name="save" checked>
-            <span class="checkbox"></span>
-            <label for="signInFormSave">아이디 저장</label>
-            <input type="checkbox" id="signInFormHold" name="hold">
-            <span class="checkbox"></span>
+            <input class="checkbox" type="checkbox" id="signInFormSave" name="save" checked>
+            <label class="label" for="signInFormSave">아이디 저장</label>
+            <input class="checkbox" type="checkbox" id="signInFormHold" name="hold">
             <label for="signInFormHold">로그인 상태 유지</label>
           </div>
-
+          <p>타 사이트와 비밀번호를 동일하게 사용할 경우 도용의 위험이 있으므로, 사용자 정보 보호를 위해 정기적인 비밀번호 변경을 요청 드립니다.</p>
+          <p>Cafe W 공식 홈페이지는 Internet Explorer 9.0 이상, Chrome, Firefox, Safari, Edge 브라우저에 최적화 되어있습니다.</p>
           <button type="submit" name="signIn">로그인</button>
         </fieldset>
       </form>
-      <p>타 사이트와 비밀번호를 동일하게 사용할 경우 도용의 위험이 있으므로, 사용자 정보 보호를 위해 정기적인 비밀번호 변경을 요청 드립니다.</p>
-      <p>Cafe W 공식 홈페이지는 Internet Explorer 9.0 이상, Chrome, Firefox, Safari, Edge 브라우저에 최적화 되어있습니다.</p>
-      <!-- IE 9도 되어야 하면 그리드 같은 거 못 쓰네 -->
+      <footer class="sign-in__navigation">
+        <h2 class="a11y-hidden">회원가입 및 아이디 비밀번호 찾기</h2>
+        <ul>
+          <li><a href="#">회원가입</a><span class="divider" aria-hidden="true">ㅣ</span></li>
+          <li><a href="#">아이디 찾기</a><span class="divider" aria-hidden="true">ㅣ</span></li>
+          <li><a href="#">비밀번호 찾기</a></li>
+        </ul>
+      </footer>
     </section>
-    <footer class="member">
-      <h2 class="a11y-hidden">회원가입 및 아이디 비밀번호 찾기</h2>
-      <ul>
-        <li><a href="#">회원가입</a><span class="divider" aria-hidden="true">ㅣ</span></li>
-        <li><a href="#">아이디 찾기</a><span class="divider" aria-hidden="true">ㅣ</span></li>
-        <li><a href="#">비밀번호 찾기</a></li>
-      </ul>
-    </footer>
+    
   </main>
   <footer class="footer">
-    <img src="./img/footer/Cafe W (Vertical).svg" alt="CAFE W">
+    <svg>
+      <use xlink:href="../static/svg/sprite-sheet.svg#cafew-vertical-">
+    </svg>
     <ul class="about-us">
       <li><a href="#">개인정보 처리방침</a></li>
       <li><a href="#">멤버스 이용약관</a></li>
@@ -128,8 +132,9 @@
     </ul>
     <address>
       서울시 강남구 테헤란로 10길 18 K&I 타워 카페 W (2F)<span class="divider">|</span>연락처 : <a href="tel:0269512121">02-6951-2121</a>
-      사업자 등록번호 : 107-86-16302<span class="divider">|</span>통신판매업 신고 : 강남 제 002519호<span class="divider">|</span>대표이사 :
-      김데레사
+      <span class="line">사업자 등록번호 : 107-86-16302<span class="divider">|</span>통신판매업 신고 : 강남 제 002519호<span
+          class="divider">|</span>대표이사 :
+        김데레사</span>
     </address>
     <small>
       © 2020 CAFE W COMPANY. ALL rights reserved.
