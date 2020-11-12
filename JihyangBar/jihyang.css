@@ -1,0 +1,265 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url(./fontello.css);
+
+/* 숨긴 제목 및 숨긴 컨텐츠 */
+.a11y-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+}
+
+body *,
+body *::before,
+body *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-size: 2.0rem;
+    color: #ccc;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    /* display: none; */
+}
+
+.skip-nav {
+    display: none;
+}
+
+.header,
+.visual,
+.main,
+.slogan,
+.footer {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    border-radius: 0 0 15px 15px;
+    padding: 0 30px;
+}
+
+.logo {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    margin: 0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.member {
+    font-size: 1.5rem;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.member li {
+    display: inline-block;
+    padding: 2px 0;
+}
+
+.member a {
+    padding: 6px 0;
+    display: inline-block;
+}
+
+.navigation {
+    padding: 35px;
+}
+
+.menu {
+    border-top: 2px solid currentColor;
+    margin: 10px 0 0 0;
+    padding-left: 0;
+    list-style: none;
+    height: 115px;
+    border-radius: 0 0 5px 5px;
+    padding-left: 175px;
+}
+
+.menu-item {
+    position: relative;
+    float: left;
+}
+
+.menu-button {
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: bold;
+    /* background-color: transparent; */
+    line-height: 35px;
+    display: block;
+    padding: 0 20px;
+    border: 0;
+    margin-left: 2px;
+
+}
+
+.menu-act .menu-button {
+    /* color: #ff0; */
+}
+
+.menu-act .menu-button::after {
+    content: "";
+    display: block;
+    border-top: 4px solid lightgray;
+}
+
+.sub-menu {
+    margin-left: 20px;
+    padding-left: 0;
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 47px;
+    white-space: nowrap;
+}
+
+.sub-menu a {
+    padding: 8px 0;
+    margin-right: 10px;
+}
+
+.sub-menu a:hover::before,
+.sub-menu a:focus::before {
+    content: '\e800';
+}
+
+.menu-act .sub-menu {
+    display: block;
+}
+
+.sub-menu1,
+.sub-menu2,
+.sub-menu3 {
+    left: 0;
+}
+
+.sub-menu4,
+.sub-menu5,
+.sub-menu6 {
+    right: 0;
+}
+
+@keyframes textAni{
+    0%{
+        font-size: 2px;
+        transform: translate(0,0);  
+    }
+    50%{
+        font-size: 25px;
+        transform: translate(850px,180px);
+    }
+    100%{
+        font-size:50px;
+        transform: translate(400px,75px);
+    }
+}
+@keyframes textAni2{
+    0%{
+        font-size: 50px;
+        transform: translate(670px, 55px);
+    }
+    50%{
+        font-size: 15px;
+        transform: translate(600px,120px);
+    }
+    100%{
+        font-size: 35px;
+        transform: translate(550px,170px);
+    }
+}
+@keyframes textAni3{
+    0%{
+        font-size: 11px;
+        transform: translate(1200px, 0px);
+    }
+    50%{
+        font-size: 25px;
+        transform: translate(350px,200px);
+    }
+    100%{
+        font-size: 45px;
+        transform: translate(750px,45px);
+    }
+}
+
+.visual {
+    color: lightslategray;
+    height: 300px;
+    position: relative;
+    
+}
+ 
+.visual-text2{
+    margin: 0;
+    animation-name: textAni;
+    animation:textAni 2000ms alternate infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: forwards;
+    color: #181818;
+}
+.visual-text1{
+    color: red;
+    position: absolute;
+    top: 110px;
+    left: 70px;
+    
+}
+.visual-text3{
+    margin: 0;
+    animation-name: textAni2;
+    animation:textAni2 2500ms alternate infinite cubic-bezier(0.47, 0, 0.745, 0.715);
+    animation-fill-mode: forwards;
+    color: #181818;
+}
+.visual-text4{
+    margin: 0;
+    animation-name: textAni3;
+    animation:textAni3 2000ms alternate infinite cubic-bezier(0.47, 0, 0.745, 0.715);
+    animation-fill-mode: forwards;
+    color: #181818;
+}
+
+
+.main{
+    background: tomato;
+    padding: 30px 15px;
+    min-height: 450px;
+}
+.group1{
+    background: red;
+}
+.group2{
+    background: orange;
+}
+.group3{
+    background: dodgerblue;
+}
+.slogan{
+    background: skyblue;
+}
+.footer{
+    background: lightgreen;
+}
