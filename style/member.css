@@ -1,36 +1,38 @@
+/*공통 로그인/회원가입*/
 
-.sign-up{
+.user{
   background-color: #FFF;
   width: 742px;
   margin: 0 auto;
   color: #7D6F5D;
   border: 1px solid #CBC5BE;
-  margin-top: 70px;
+  margin: 70px auto;
 }
 
-.sign-up__header{
+.user__header{
   padding-bottom: 25px;
   border-bottom: 1px solid #CBC5BE;
   text-align: center;
 }
-.sign-up__heading{
+.user__heading{
   padding-top: 25px;
   margin-bottom: 15px;
   font-size: 1.6em;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 0.1em; 
 }
 
-.sign-up__brief{
+.user__brief{
   font-size: 1em;
 }
 
-.sign-up__form{
+.sign-up__form, .sign-in__form{
   padding: 0 152px;
   margin-bottom: 50px;
 }
 
-.sign-up .label{
+.user .label{
   display: block;
   line-height: 1.2rem;
   margin-bottom: 10px;
@@ -38,27 +40,53 @@
   font-weight: 600;
 }
 
-.sign-up sup {
+.user__form sup {
   color: #E27762;
   margin-left: 2px;
 }
 
-.user [role="alert"] {
-  display: none;
+.user__form [role="alert"] {
+  display: block;
+  font-size: 1.2rem;
+  color: #E27762;
+  margin-top: 4px;
 }
 
-.sign-up input, .sign-up select {
-  border: 1px solid rgba(125,111,93,50%);
+.user input, .user select {
+  border: 1px solid #7d6f5d80;
 }
 
 .sign-hint {
   font-size: 1.2rem;
   line-height: 1.4;
   margin: 6px 0;
+  position: relative;
 }
 
-.sign-up__id input,
-.sign-up__pwd input,
+.sign-hint::before{
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(../static/svg/Star.svg) no-repeat;
+  vertical-align: middle;
+}
+
+
+/*회원가입 부분*/
+
+.sign-up__id {
+  margin-top: 165px;
+}
+
+.sign-up {
+  background: url(../static/svg/Barista-Girl.svg) center 140px no-repeat, 
+  url(../static/svg/Barista.svg) right 105% no-repeat;
+ 
+}
+
+.user__id input,
+.user__pwd input,
 .sign-up__pwd-check input,
 .sign-up__name input,
 .sign-up__phone input,
@@ -71,24 +99,46 @@
   border-radius: 3px;
 }
 
-.sign-up__id input,
-.sign-up__pwd input,
+.user__id input,
+.user__pwd input,
 .sign-up__pwd-check input,
 .sign-up__name input,
-.sign-up__phone input,
-.sign-up__nick input{
+.sign-up__phone input{
   width: 100%;
 }
 
+.sign-up__nick input{
+  width: 70%;
+}
+/* IE 10, 11 화살표 숨기기 */
+select::-ms-expand {
+  display: none;
+}
+
 .sign-up__birth select {
-  margin-right: 10px;
-}
-.sign-up__form [name="year"] {
-  width: 30%;
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+  background: url(../static/svg/down-arrow.svg);
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  margin-right:10px;
 }
 
+.sign-up__form [name="year"]
+{
+  width: 25%;
+}
 
-.sign-up__id,
+.sign-up__form [name="month"],
+.sign-up__form [name="day"],
+.sign-up__form [name="calander-type"]
+{
+  width: 15%;
+}
+
+.sign-in__id,
 .sign-up__pwd,
 .sign-up_pwd-check,
 .sign-up__name,
@@ -124,7 +174,7 @@
   left: 0;  
   width: 20px;
   height: 20px;
-  background: url(../static/svg/radio-off.svg);
+  background: url(../static/svg/radio-off.svg) no-repeat;
 }
 
 .sign-up__sex input:checked::before {
@@ -135,18 +185,23 @@ background-image: url(../static/svg/radio-on.svg)
   vertical-align: sub;
 }
 
-.sign-up__auth dt {
-  width: 100%;
-}
-
 .sign-up__cell, .sign-up__ipin {
   width: 50%;
   float: left;
-  background-color: yellow;
-  padding: 13px;
   text-align: center;
   height: 230px;
+}
 
+.sign-up__cell {
+  border: 1px solid #CBC5BE;
+  border-right: 0;
+  padding: 50px 40px;
+}
+.sign-up__ipin {
+  position: relative;
+  border: 1px solid #CBC5BE;
+  border-left: 0;
+  padding: 25px 20px;
 }
 
 .sign-up__cell figcaption, 
@@ -155,6 +210,7 @@ background-image: url(../static/svg/radio-on.svg)
   font-weight: 700;
   line-height: 1.1; 
   margin-bottom: 6px;
+  margin-top: 15px;
 }
 
 .sign-up__cell p, 
@@ -164,18 +220,45 @@ background-image: url(../static/svg/radio-on.svg)
   margin-bottom: 6px;
 }
 
+/*가상요소로 나눠주는 줄 생성 */
+.sign-up__ipin::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 408px;
+  transform: scale(0.5);
+  background-color:  #CBC5BE;
+  top: -90px;
+  left: 0;
+}
+
 .sign-up__auth button {
   font-size: 1.2rem;
   width: 73px;
   height: 27px;
 }
-.sign-up__ipin {
-  background-color: red;
-}
 
 
 
 /*이용 약관*/
+
+.policy-container {
+  font-weight: 200;
+  font-size: 1.2rem;
+  background-color: #FFFCF9;
+  padding: 17px;
+  border-radius: 3px;
+  border: 1px solid #7d6f5d4d;
+  margin-bottom:30px;
+}
+.policy-container p {
+  height: 135px;
+  line-height: 1.5;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 0 15px;
+}
+
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 4px;   
@@ -185,42 +268,91 @@ background-image: url(../static/svg/radio-on.svg)
   background-color: #7D6F5D;
 }
 ::-webkit-scrollbar-track-piece {
-  border-radius: 10px;
-  background-color: rgb(179, 176, 176);
+  border-radius: 4px;
+  background-color: #b3b0b0;
 }
-.policy-container {
-  font-weight: 200;
-  font-size: 1.2rem;
-  background-color: #FFFCF9;
-  padding: 17px;
-  border-radius: 3px;
-  border: 1px solid rgba(125,111,93,30%);
-  margin-bottom: 67px;
-}
-.policy-container p {
-  height: 135px;
-  line-height: 1.5;
-  overflow: hidden;
-  overflow-y: scroll;
-  padding: 0 15px;
-}
+
 .sign-up__provision-container {
   position: relative;
 }
 .sign-up__provision-confirm{
   position: absolute;
-  right: 0;
-  top :0;
+  right: 15px;
+  top : -5px;
 }
 
-.sign-up__select-field{
-  position: relative;
-}
-/* 마크업 순서상 앞에 배치된 메세지를 선태 필드셋 맨 끝에 배치 */
-.sign-up__select-field .sign-hint {
+.checkbox::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #CFCCC7;
+  border-radius: 50%;
   position: absolute;
-  bottom: 17px;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  z-index: 10;
 }
+
+.checkbox::after{
+  content: "";
+  width: 34px;
+  height: 14px;
+  background-color: #cfccc780;
+  border-radius: 7px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.checkbox:checked::before {
+  background-color: #7D6F5D;
+  left: 17px;
+}
+.checkbox:checked::after {
+  background-color: #b2a79c;
+}
+
+.sign-up__provision-container + .sign-hint{
+  margin-bottom: 20px;
+}
+
+/*로그인 영역*/
+
+.sign-in {
+  background: url(../static/svg/Barista.svg)  right bottom no-repeat, #FFFCF9;
+
+}
+.sign-in input{
+  background-color: #FFFCF9;
+}
+
+.sign-in__save{
+  position: relative;
+  background-color: pink;
+}
+
+.sign-in .checkbox{
+  position: absolute;
+}
+
+.sign-in__navigation {
+  padding: 30px;
+  border-top: 1px solid #CBC5BE;
+}
+
+.sign-in__navigation ul {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in__navigation a {
+  padding: 8px 12px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
 
 .sign-btn {
   background-color: #7D6F5D;
