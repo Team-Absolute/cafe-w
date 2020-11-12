@@ -39,53 +39,52 @@
         </form>
       </section>
     </div>
-    <nav class="navigation">
-      <h2 class="a11y-hidden">메뉴</h2>
-      <ul class="navigation__list">
-        <li class="navigation__main-item">Drinks
-          <ul class="navigation__sub-list">
-            <li><a href="#">콜드 브루</a></li>
-            <li><a href="#">에스프레소</a></li>
-            <li><a href="#">기타 제조 음료</a></li>
-          </ul>
-        </li>
-        <li class="navigation__main-item">Foods
-          <ul class="navigation__sub-list">
-            <li><a href="#">베이커리</a></li>
-            <li><a href="#">케잌</a></li>
-            <li><a href="#">샌드위치 & 샐러드</a></li>
-          </ul>
-        </li>
-        <li class="navigation__main-item">Products
-          <ul class="navigation__sub-list">
-            <li><a href="#">머그</a></li>
-            <li><a href="#">텀블러</a></li>
-            <li><a href="#">커피용품</a></li>
-          </ul>
-        </li>
-        <li class="navigation__main-item">Lectures
-          <ul class="navigation__sub-list">
-            <li><a href="#">UI 구조 & 디자인</a></li>
-            <li><a href="#">UI 인터렉션 주니어</a></li>
-            <li><a href="#">리엑트 프로그래밍</a></li>
-          </ul>
-        </li>
-        <li class="navigation__main-item">Customer Service
-          <ul class="navigation__sub-list">
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">추천 채널</a></li>
-            <li><a href="#">체크 리스트</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    
+      <nav class="navigation">
+        <h2 class="a11y-hidden">메뉴</h2>
+        <ul class="navigation__list">
+          <li class="navigation__main-item">Drinks
+            <ul class="navigation__sub-list">
+              <li><a href="#">콜드 브루</a></li>
+              <li><a href="#">에스프레소</a></li>
+              <li><a href="#">기타 제조 음료</a></li>
+            </ul>
+          </li>
+          <li class="navigation__main-item">Foods
+            <ul class="navigation__sub-list">
+              <li><a href="#">베이커리</a></li>
+              <li><a href="#">케잌</a></li>
+              <li><a href="#">샌드위치 & 샐러드</a></li>
+            </ul>
+          </li>
+          <li class="navigation__main-item">Products
+            <ul class="navigation__sub-list">
+              <li><a href="#">머그</a></li>
+              <li><a href="#">텀블러</a></li>
+              <li><a href="#">커피용품</a></li>
+            </ul>
+          </li>
+          <li class="navigation__main-item">Lectures
+            <ul class="navigation__sub-list">
+              <li><a href="#">UI 구조 & 디자인</a></li>
+              <li><a href="#">UI 인터렉션 주니어</a></li>
+              <li><a href="#">리엑트 프로그래밍</a></li>
+            </ul>
+          </li>
+          <li class="navigation__main-item">Customer Service
+            <ul class="navigation__sub-list">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">추천 채널</a></li>
+              <li><a href="#">체크 리스트</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
   </header>
-  </div>
-
   <main>
-
     <section class="recommend-beverage">
-      <h2 class="a11y-hidden">Cafe W의 추천메뉴</h2>
+      <div class="position-container">
+        <h2 class="a11y-hidden">Cafe W의 추천메뉴</h2>
       <div class="recommend-beverage__title">
         <p lang="en" class="recommend-beverage__subject">SPRING IS A CUP
           <span>of</span>
@@ -98,7 +97,8 @@
         <li>
           <figure>
             <a href="#">
-              <img src="./static/img/index/recommend-beverage/Beverage-01.png" alt="딸기 레이어 슈 크림 프라푸치노" aria-labelledby="beverageOne">
+              <img src="./static/img/index/recommend-beverage/Beverage-01.png" alt="딸기 레이어 슈 크림 프라푸치노"
+                aria-labelledby="beverageOne">
             </a>
             <figcaption id="beverageOne">
               <a href="#">
@@ -112,12 +112,14 @@
           <figure>
             <figcaption id="beverageTwo">
               <a href="#">
-                <p lang="en">Choux Cream Latte</p>
-                <p>슈 크림 라떼</p>
+                
+                <p lang="en">Spring Peach Green Tea</p>
+                <p>스프링 피치 그린 티</p>
               </a>
             </figcaption>
             <a href="#">
-              <img src="./static/img/index/recommend-beverage/Beverage-02.png" alt="슈 크림 라떼" aria-labelledby="beverageTwo">
+              <img src="./static/img/index/recommend-beverage/Beverage-02.png" alt="슈 크림 라떼"
+                aria-labelledby="beverageTwo">
             </a>
           </figure>
         </li>
@@ -125,17 +127,19 @@
           <figure>
             <figcaption id="beverageThree">
               <a href="#">
-                <p lang="en">Spring Peach Green Tea</p>
-                <p>스프링 피치 그린 티</p>
+                <p lang="en">Choux Cream Latte</p>
+                <p>슈 크림 라떼</p>
               </a>
             </figcaption>
             <a href="#">
-              <img src="./static/img/index/recommend-beverage/Beverage-03.png" alt="스프링 피치 그린 티" aria-labelledby="beverageThree">
+              <img src="./static/img/index/recommend-beverage/Beverage-03.png" alt="스프링 피치 그린 티"
+                aria-labelledby="beverageThree">
             </a>
           </figure>
         </li>
       </ul>
       <a href="#" class="see-all a-button">자세히 보기</a>
+      </div>
     </section>
 
     <section class="recommend-lecture">
@@ -521,23 +525,23 @@
     <section class="w-card">
       <div class="w-card-container">
         <h2 class="w-card__heading a11y-hidden" id="wCardHeading">CAFE W card</h2>
-      <div class="w-card__brief">
-        <p lang="en">PICK<span>YOUR</span> <span>FAVORITE</span></p>
-        <pre class="brief__heading">다양한 메뉴를
+        <div class="w-card__brief">
+          <p lang="en">PICK<span>YOUR</span> <span>FAVORITE</span></p>
+          <pre class="brief__heading">다양한 메뉴를
 카페 W에서 즐겨보세요</pre>
-        <pre class="brief__brief">카페 W만의 특별함을 경험할 수 있는 최상의 선택 음료
+          <pre class="brief__brief">카페 W만의 특별함을 경험할 수 있는 최상의 선택 음료
 카페 W 커피와 완벽한 어울림을 자랑하는 푸드
 사용한 시도와 디자인으로 가치를 더하는 상품
 소중한 사람에게 마음을 전하는 가장 좋은 방법. 카페 W 카드</pre>
-      </div>
-      <ul class="w-card__img">
-        <li><img src="./static/img/index/w-card/Photo 01.png" alt="w카드, 라떼 아트 제작 모습"></li>
-        <li><img src="./static/img/index/w-card/Photo 02.png" alt="w카드, 하트가 그려진 라떼"></li>
-        <li><img src="./static/img/index/w-card/Photo 03.png" alt="w카드, 커피 타임 이미지 컷"></li>
-      </ul>
-      <!-- 이미지 목록으로 묶음. 별다른 의미는 없는 듯? 후에 이미지가 추가 됐을 때, 목록에 추가 되는 개념.
+        </div>
+        <ul class="w-card__img">
+          <li><img src="./static/img/index/w-card/Photo 01.png" alt="w카드, 라떼 아트 제작 모습"></li>
+          <li><img src="./static/img/index/w-card/Photo 02.png" alt="w카드, 하트가 그려진 라떼"></li>
+          <li><img src="./static/img/index/w-card/Photo 03.png" alt="w카드, 커피 타임 이미지 컷"></li>
+        </ul>
+        <!-- 이미지 목록으로 묶음. 별다른 의미는 없는 듯? 후에 이미지가 추가 됐을 때, 목록에 추가 되는 개념.
            이미지가 겹쳐져 보이는 시안인데, 호버된 이미지를 앞으로 보이게 해도 괜찮을 듯. z-index -->
-      <a class="w-card__more a-button" href="#" aria-labelledby="wCardHeading" title="W 카드 자세히 보기">자세히 보기</a>
+        <a class="w-card__more a-button" href="#" aria-labelledby="wCardHeading" title="W 카드 자세히 보기">자세히 보기</a>
       </div>
     </section>
 
