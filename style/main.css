@@ -539,7 +539,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../static/svg/Star\ Symbol.svg) no-repeat;
+  background: url(../static/svg/Star-Symbol.svg) no-repeat;
 }
 .video-container:before {
   background-position: 0 50%;
@@ -550,7 +550,7 @@
 
 /* section.reserve */
 .reserve {
-  background: url(../static/img/index/reserve/Image\ 01.png) no-repeat 0 0;
+  background: url(../static/img/index/reserve/Image-01.png) no-repeat 0 0;
   background-size: cover;
 }
 .reserve-container {
@@ -558,7 +558,7 @@
   margin: 0 auto;
   color: #A37356;
   padding: 90px 120px 200px;
-  background: url(../static/svg/Star\ Symbol\ \(1\).svg) no-repeat 0 50%;
+  background: url(../static/svg/Star-Symbol-1.svg) no-repeat 0 50%;
 }
 .reserve__heading {
   font-size: 2rem;
@@ -709,7 +709,7 @@
   justify-content: center;
 }
 .lab__list li:first-child {
-  background: url(../static/img/index/lab/Photo\ \(1\).png) no-repeat;
+  background: url(../static/img/index/lab/Photo-1.png) no-repeat;
   position: absolute;
   top: 0;
   left: 50%;
@@ -717,7 +717,7 @@
   z-index: 5;
 }
 .lab__list li:last-child {
-  background: url(../static/img/index/lab/Photo\ \(2\).png) no-repeat;
+  background: url(../static/img/index/lab/Photo-2.png) no-repeat;
   position: absolute;
   top: 200px;
   right: 50%;
@@ -813,7 +813,7 @@
   left: 350px;
   display: flex;
   flex-flow: column nowrap;
-  background: url(../static/svg/Coffee\ Store.svg) no-repeat 200px 100%;
+  background: url(../static/svg/Coffee- Store.svg) no-repeat 200px 100%;
 }
 .store__heading {
   width: 115px;
