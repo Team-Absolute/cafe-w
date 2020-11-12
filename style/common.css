@@ -198,8 +198,12 @@
 .recommend-beverage__list img {
   width: 238px;
   height: auto;
-  animation: bounce 0.1s ease-in-out alternate infinite;
+  animation: bounce 400ms ease-in-out alternate infinite;
 }
+.recommend-beverage__list:first-child{
+  animation-delay: 1s;
+}
+
 
 .recommend-beverage__list li:nth-child(1) {
   top: -395px;
