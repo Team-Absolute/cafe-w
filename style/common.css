@@ -35,6 +35,7 @@
 .member__menu {
   display: flex;
   font-size: 1.6rem;
+  color: #FFFCF9;
 }
 
 .member__menu li:first-child {
@@ -103,6 +104,7 @@
   background-color: #F3D6B0;
   display: flex;
   flex-flow: column nowrap;
+  position: relative;
 }
 
 .recommend-beverage__title {
@@ -117,6 +119,7 @@
   text-align: center;
   font-size: 2.6rem;
   font-weight: 100;
+  padding-bottom: 210px;
 }
 
 .recommend-beverage__subject[lang='en'] {
@@ -158,9 +161,55 @@
   font-weight: 700;
 }
 
+.recommend-beverage__list {
+  position: relative;
+  width: 749px;
+  margin-left: 481px;
+  margin-right: 165px;
+}
+
+.recommend-beverage__list li {
+  position: absolute;
+  text-align: center;
+}
+
 .recommend-beverage__list img {
   width: 238px;
   height: auto;
+}
+
+.recommend-beverage__list li:nth-child(1) {
+  top: -395px;
+  left: -70px;
+}
+
+.text-next{
+  display: block;
+}
+.recommend-beverage__list li:nth-child(2) {
+  top: -305px;
+  left: 600px;
+}
+
+.recommend-beverage__list li:nth-child(3) {
+  top: -430px;
+  left: 270px;
+}
+.recommend-beverage__list figure{
+  position: relative;
+}
+.recommend-beverage__list figcaption{
+  position: absolute;
+  left:10px;
+  white-space:nowrap ;
+}
+.recommend-beverage__list li:nth-child(2) figcaption{
+  top:-60px;
+  left:50px;
+}
+.recommend-beverage__list li:nth-child(3) figcaption{
+  top:-60px;
+  left:-10px;
 }
 
 .recommend-beverage__list [lang="en"] {
@@ -172,6 +221,11 @@
 .recommend-beverage__list p {
   font-size: 2.1rem;
   color: rgba(95, 76, 76, 0.9);
+}
+
+.see-all {
+  display: flex;
+  background-color: yellow;
 }
 
 /* 푸터 영역 */
