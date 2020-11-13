@@ -13,7 +13,7 @@
   top: 85%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 9999;
   display: flex;
 }
 .notice__brief {
@@ -73,7 +73,8 @@
 }
 
 .recommend-beverage__subject[lang='en'] {
-  font-size: 4rem;
+  font-size: 3.7rem;
+  line-height: 1.5;
   margin: 83px 0 0 126px;
   color: #A37356;
   width: 350px;
@@ -96,6 +97,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: lowercase;
 }
 
 .recommend-beverage__subject span::before {
@@ -320,6 +322,9 @@
   padding: 50px;
   text-align: left;
 }
+.lecture-detail.is--closed {
+  display: none;
+}
 .lecture-detail h4 {
   font-size: 3rem;
   font-weight: 700;
@@ -498,15 +503,21 @@
   margin-top: 10px;
   font-size: 1.6rem;
   padding-left: 1em;
+  counter-reset: ranking;
 }
 .popular-lecture__list a {
   display: inline-block;
   padding: 3px 0;
   margin: 2px 0;
+  flex-grow: 1;
 }
 .popular-lecture__list li {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+.popular-lecture__list li::before{
+  counter-increment: ranking;
+  content: counter(ranking) ". ";
 }
 .popular-lecture__list .up,
 .popular-lecture__list .down,
@@ -701,6 +712,9 @@
   padding: 5px;
   background-color: white;
 }
+.w-card__img li:hover {
+  z-index: 10;
+}
 .w-card__img li:nth-child(1) {
   transform: rotate(-30deg) translateX(50px) translateY(50px);
 }
@@ -753,6 +767,9 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+}
+.lab__list li:hover {
+  z-index: 10;
 }
 .lab__list li:first-child {
   background: url(../static/img/index/lab/Photo-1.png) no-repeat;
