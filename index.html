@@ -12,8 +12,6 @@
 
 <body>
   <span class="skip-nav"><a href="./index.html">본문 바로가기</a></span>
-  <!-- body 맨 위에 본문 바로가기 -->
-
   <header class="header">
     <div class="header-container">
       <h1 class="header__heading"><a href="#"><img src="./static/svg/Cafe-Logo.svg" alt="CAFE W"></a>
@@ -88,7 +86,6 @@
       <div class="recommend-beverage__title">
         <p lang="en" class="recommend-beverage__subject">SPRING IS A CUP
           <span>of</span>
-          <!-- css 참조: https://stackoverflow.com/questions/23584120/line-before-and-after-title-over-image-->
           <em>CHOUX CREAM</em>
         </p>
         <p class="recommend-beverage__desc">봄이 왔다 커피가 설렌다</p>
@@ -153,14 +150,12 @@
         <div class="multicampus-lecture">
           <ul class="multicampus-lecture__list">
             <li class="multicampus-lecture__item">
-              <!--미리 보기 부분-->
               <dl>
                 <dt id="multiCampusLectureItem1">GIT & HTML/CSS</dt>
                 <dd>입문자를 위한 GIT과 HTML&CSS</dd>
               </dl>
               <button class="more-button" aria-labelledby="multiCampusLectureItem1" aria-haspopup="dialog"
                 aria-pressed="false">강의 정보</button>
-              <!--숨겨진 모달 창-->
               <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="multiItemDialog1">
                 <h4 id="multiItemDialog1" lang="en">GIT & HTML/CSS</h4>
                 <p>입문자를 위한 GIT과 HTML&CSS</p>
@@ -206,14 +201,12 @@
               </div>
             </li>
             <li class="multicampus-lecture__item">
-              <!--미리 보기 부분-->
               <dl>
                 <dt id="multiCampusLectureItem2">Responsive Web Design Strategies</dt>
                 <dd>반응형 웹디자인 전략</dd>
               </dl>
               <button class="more-button" aria-labelledby="multiCampusLectureItem2" aria-haspopup="dialog"
                 aria-pressed="false">강의 정보</button>
-              <!--숨겨진 모달 창-->
               <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="multiItemDialog2">
                 <h4 id="multiItemDialog2" lang="en">Responsive Web Design Strategies</h4>
                 <p>반응형 웹디자인 전략</p>
@@ -285,8 +278,6 @@
           </div>
       </div>
       </section>
-      <!-- 멀티 캠퍼스 섹션 끝-->
-      <!-- 이듬 섹션 시작 -->
       <section class="edum">
         <h3 class="edum-lecture__heading" id="edumHeading">
           <a href="#" role="button">
@@ -296,14 +287,12 @@
         <div class="edum-lecture">
           <ul class="edum-lecture__list">
             <li class="edum-lecture__item">
-              <!--미리 보기 부분-->
               <dl>
                 <dt id="edumLectureItem1">UI Structure & Design Course</dt>
                 <dd>UI 구조 디자인 과정</dd>
               </dl>
               <button class="more-button" aria-labelledby="edumLectureItem1" aria-haspopup="dialog"
                 aria-pressed="false">강의 정보</button>
-              <!--숨겨진 모달 창-->
               <div class="lecture-detail" role="dialog" aria-modal="false" aria-labelledby="edumItemDialog1">
                 <h4 id="edumItemDialog1" lang="en">UI Structure $ Design Course</h4>
                 <p>UI 구조 디자인 과정</p>
@@ -348,9 +337,7 @@
                 </button>
               </div>
             </li>
-            <!--이듬 두번째 강의-->
             <li class="edum-lecture__item">
-              <!--미리 보기 부분-->
               <dl>
                 <dt id="edumLectureItem2">UI Interaction & Junior Course</dt>
                 <dd>UI 인터렉션 주니어 과정</dd>
@@ -430,10 +417,7 @@
           </div>
         </div>
       </section>
-      <!-- 이듬 섹션 끝-->
     </section>
-    <!--추천 강좌 섹션 끝-->
-
     <div class="section-group">
       <div class="section-container">
         <section class="review">
@@ -519,24 +503,17 @@
           <li><img src="./static/img/index/w-card/Photo-02.png" alt="w카드, 하트가 그려진 라떼"></li>
           <li><img src="./static/img/index/w-card/Photo-03.png" alt="w카드, 커피 타임 이미지 컷"></li>
         </ul>
-        <!-- 이미지 목록으로 묶음. 별다른 의미는 없는 듯? 후에 이미지가 추가 됐을 때, 목록에 추가 되는 개념.
-            이미지가 겹쳐져 보이는 시안인데, 호버된 이미지를 앞으로 보이게 해도 괜찮을 듯. z-index -->
         <a class="w-card__more a-button" href="#" aria-labelledby="wCardHeading" title="W 카드 자세히 보기">자세히 보기</a>
       </div>
     </section>
 
     <section class="lab">
       <h2 class="lab__headline">CAFE W <span>COFFEE LAB</span></h2>
-      <!-- 제목 그대로 쓰고, 굵기 다른 부분 span -->
       <p class="lab__brief">최고의 커피를 향한 끊임없는 노력, <em>카페 W 커피연구소</em></p>
-      <!-- 문구 p, 중요 문구 em -->
       <ul class="lab__list">
         <li><a href="#">LAB MENU</a></li>
         <li><a href="#">LAB BARISTA</a></li>
       </ul>
-      <!-- 목록 처리. 
-          이미지는 백그라운드로,
-          이미지가 겹쳐져 보이는 시안인데, 호버된 이미지를 앞으로 보이게 해도 괜찮을 듯. z-index -->
     </section>
 
     <section class="medal">

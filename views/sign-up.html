@@ -9,7 +9,6 @@
 </head>
 <body>
   <span class="skip-nav"><a href="#">본문 바로가기</a></span>
-  <!-- body 맨 위에 본문 바로가기 -->
   <header class="header">
       <div class="header-container">
         <h1 class="header__heading"><a href="../index.html"><img src="../static/svg/Cafe-Logo.svg" alt="CAFE W"></a>
@@ -82,12 +81,9 @@
         <h2 class="user__heading">SIGN UP</h2>
         <p class="user__brief">Cafe W에 가입하세요. 좋은 서비스로 보답하겠습니다.</p>
       </header>
-      <!-- 섹션 안에 헤더 -->
-      <!-- 상단과 하단 이미지는 배경으로 처리. 마크업 x -->
       <form action="#" method="POST" class="user__form sign-up__form">
         <fieldset>
-          <legend class="a11y-hidden">필수 입력 정보</legend>
-          <!-- 필수 정보와 선택 정보 fieldset 으로 구분 -->        
+          <legend class="a11y-hidden">필수 입력 정보</legend>  
           <div class="user__id sign-up__id">
             <label class="label" for="signUpId">아이디<sup><span class="a11y-hidden">필수 입력</span>*</sup></label>
             <input id="signUpId" type="email" name="id" placeholder="등록할 사용자 계정을 입력합니다. (예: seulbinim@gmail.com)" aria-required="true">
@@ -121,7 +117,6 @@
           </dl>
           
           <dl class="sign-up__birth">
-            <!-- 생년월일 타이틀, 그 묶음으로 셀렉트 세 개, dl로 묶음 -->
             <dt class="label">생년월일<sup><span class="a11y-hidden">필수 입력</span>*</sup></dt> 
             <dd>
               <label for="signUpYear"></label>
@@ -134,7 +129,6 @@
                   <option value="year">2017</option>
                   <option value="year">2016</option>
                   <option value="year">2015</option>
-                  <!-- 이거 다 쓰는 게 맞아? 어디까지 써?-->
                 </optgroup>
               </select>
               <label class="a11y-hidden" for="signUpMonth">월</label>
@@ -210,8 +204,6 @@
           </div>
           
           <dl class="sign-up__auth">
-            <!-- dl로 묶음 -->
-            
             <dt class="label">인증방식<sup><span class="a11y-hidden">필수 입력</span>*</sup> </dt>
             <dd class="sign-up__cell">
               <figure>
@@ -220,7 +212,6 @@
               </figure>
               <p>본인 명의 휴대폰으로 인증 절차를 수행합니다.</p>
               <button class="button sign-btn" type="button" aria-labelledby="phoneConfirm" title="휴대폰 인증">인증</button>
-              <!-- 아리아 레이블로 피그캡션과 연결 -->
             </dd>
             <dd class="sign-up__ipin">
               <figure>
