@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
   <title>Cafe W - 회원가입</title>
 </head>
 <body>
+
   <span class="skip-nav"><a href="#">본문 바로가기</a></span>
   <header class="header">
       <div class="header-container">
@@ -76,7 +77,7 @@
       </nav>
   </header>
   <main>
-    <section class="user sign-up">
+    <section class="user sign-up" id="content">
       <header class="user__header">
         <h2 class="user__heading">SIGN UP</h2>
         <p class="user__brief">Cafe W에 가입하세요. 좋은 서비스로 보답하겠습니다.</p>
@@ -87,7 +88,7 @@
           <div class="user__id sign-up__id">
             <label class="label" for="signUpId">아이디<sup><span class="a11y-hidden">필수 입력</span>*</sup></label>
             <input id="signUpId" type="email" name="id" placeholder="등록할 사용자 계정을 입력합니다. (예: seulbinim@gmail.com)" aria-required="true">
-            <span role="alert" class="sign-up__alert">이메일 입력 방법이 잘못되었습니다. (예: seulbinim@gamil.com)</span>
+            <span role="alert" class="sign-up__alert is--active">이메일 입력 방법이 잘못되었습니다. (예: seulbinim@gamil.com)</span>
           </div>
           
           <div class="user__pwd sign-up__pwd">

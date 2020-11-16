@@ -33,11 +33,15 @@ legend {
   width: 100%;
   height: 0;
   overflow: hidden;
-  background-color: #000;
-  color:#fff;
+  background-color: #E27762;
   padding: 0;
   text-align: center;
   z-index: 10;
+}
+.skip-nav a:focus{
+  color:#fff;
+  height: 0;
+  padding:20px 0;
 }
 
 html {
