@@ -1,0 +1,87 @@
+
+/* 루트 요소의 기본 글자크기 설정 */
+html {
+  font-size: 10px;
+  overflow-y: visible;
+}
+
+body {
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: #fff;
+  color: #181818;
+}
+
+/* 기본 박스사이징 설정 */
+
+.a11y-hidden,
+legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    clip-path: polygon(0 0, 0 0, 0 0);
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+}
+.skip-nav a {
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: #E27762;
+  padding: 0;
+  text-align: center;
+  z-index: 10;
+}
+.skip-nav a:focus{
+  color:#fff;
+  height: 0;
+  padding:20px 0;
+}
+
+html {
+  font-size: 10px;
+  font-weight: 400;
+  color: #181818;
+}
+
+
+body,
+body *,
+body::before,
+body::after,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  font-size: 1.3rem;
+  color: #7D6F5D;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 1.3rem;
+  color: #7D6F5D;
+}
+.sign-up::placeholder, select {
+  font-size: 1.3rem;
+  color: #7D6F5D;
+}
+
+.button {
+  border:none;
+  cursor: pointer;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+a:visited {
+  color: currentColor;
+}
