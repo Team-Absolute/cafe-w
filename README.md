@@ -2,7 +2,7 @@
 # 마감이 닥치기 전까진.
 카페W 클론 프로젝트
   - TEAM ABSOLUTE
-  - position: relitive; 서민기
+  - position: relative; 서민기
   - top: 0; 나윤호
   - left: 0; 한병국
 ---
@@ -62,7 +62,7 @@
   4. 문제가 생기는 것은 당연하므로, 모두가 적극적으로 대처.
 ---
 ## 마크업 방향성
-```
+```html
 <div class="store-container">
   <h2 class="store__heading"><a href="#">매장 찾기</a></h2>
   <p class="store__brief">카페 W를 가까이에서 경험해보세요. <span>고객님과 가장 가까이 있는 매장을 찾아보세요!</span></p>
@@ -77,7 +77,7 @@
   </div>
 </div>
 ```
-```
+```html
 <dl class="sign-up__sex">
   <dt class="label">성별<sup><span class="a11y-hidden">필수 입력</span>*</sup></dt>
   <dd>
@@ -88,7 +88,7 @@
   </dd>
 </dl>
 ```
-```
+```html
 <section class="video">
   <div class="video-container">
     <h2 class="a11y-hidden">카페W 상품 가격 및 할인율 영상</h2>
